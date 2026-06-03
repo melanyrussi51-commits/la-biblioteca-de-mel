@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Biblioteca de Mel</title>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alef:wght@400;700&family=Fanwood+Text:ital@0;1&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+   <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+        <header class="header"> 
+      <a href="../index.html" class="logo">
+    <img src="../assents/logo7.png" alt="Logo">
+    <h1>La Biblioteca de Mel</h1>
+</a>
+<nav class="menu">
+ <ul>
+<li><a href="../index.html">Inicio</a></li>
+<li><a href="./reseñas.html">Reseñas</a></li>
+<li><a href="./sobremi.html">Sobre mi</a></li>
+<li><a href="./lecturaspendientes.html">Lecturas pendientes</a></li>
+<li><a href="./biblioteca.html">Biblioteca</a></li>
+ </ul>
+</nav>
+  </header>
+<main>
+    <section class="resenas">
+  <h2 class="titulo-resenas">Reseñas</h2>
+  <p class="intro-resenas">
+    Pequeñas opiniones sobre libros que dejaron huella en mí.
+  </p>
+  <div class="resenas-grid">
+    <article class="resena-card" id="resena-percy">
+      <img src="../assents/3 (3) (1).jpg" alt="Portada del primer Libro de Percy Jackson y los dioses del Olimpo de Rick Riordan, Percy Jackson y el ladron del rayo"loading="lazy">
+      <h3>Percy Jackson y los dioses del Olimpo</h3>
+      <p class="estrellas">★★★★★</p>
+      <div class="tags-resena">
+        <span>⚡ Mitología</span>
+        <span>🏛️ Aventura</span>
+        <span>📚 Saga</span>
+      </div>
+      <p class="frase-resena">
+        “El libro que me hizo descubrir que amaba leer.”
+      </p>
+      <button class="ver-mas"
+onclick="abrirResena(
+'Percy Jackson',
+'★★★★★',
+'Percy Jackson fue el libro que me hizo descubrir cuánto me gusta la lectura. La mezcla entre mitología griega, aventura y humor hizo que quisiera seguir leyendo capítulo tras capítulo. Lo que más me gustó fue la forma en que Rick Riordan logra modernizar los mitos clásicos sin perder su esencia. Los personajes son divertidos, memorables y evolucionan a lo largo de la historia. Es una saga que recomiendo a cualquier persona que quiera empezar a leer fantasía.'
+)" >
+Leer más
+</button>
+    </article>
+    <article class="resena-card" id="resena-angel">
+      <img src="../assents/1,1 (1).webp" alt="Portada del primer libro de la saga Los origenes de Cassandra Clare, Ángel mecanico "loading="lazy">
+      <h3>Cazadores de sombras, Los orígenes</h3>
+      <p class="estrellas">★★★★★</p>
+      <div class="tags-resena">
+        <span>🎩 Victoriano</span>
+        <span>✨ Fantasía</span>
+        <span>📚 Trilogía</span>
+      </div>
+      <p class="frase-resena">
+        “Una historia de amor y amistad que nunca voy a olvidar.”
+      </p>
+     <button class="ver-mas"
+onclick="abrirResena(
+'Los Orígenes',
+'★★★★★',
+'Para mí, esta es una de las mejores sagas de Cassandra Clare. La ambientación victoriana le da un encanto especial y los personajes tienen una profundidad que los vuelve inolvidables. La amistad, el amor y los sacrificios hacen que esta historia sea muy difícil de olvidar.'
+)" >
+Leer más
+</button>
+    </article>
+    <article class="resena-card" id="resena-harry">
+      <img src="../assents/2 (4) (1).jpg" alt="Portada del primer libro de Harry Potter de JK Rowling, Harry Potter y la piedra filosofal"loading="lazy">
+      <h3>Harry Potter y la piedra filosofal</h3>
+      <p class="estrellas">★★★★★</p>
+      <div class="tags-resena">
+        <span>🏰 Hogwarts</span>
+        <span>✨ Magia</span>
+        <span>📚 Saga</span>
+      </div>
+      <p class="frase-resena">
+        “Entendí por qué tantas personas aman este mundo.”
+      </p>
+      <button class="ver-mas"
+onclick="abrirResena(
+'Harry Potter',
+'★★★★★',
+'Llegué a Harry Potter después de escuchar durante años lo mucho que la gente lo amaba. Cuando finalmente lo leí entendí perfectamente por qué. Hogwarts se siente como un lugar al que uno quiere pertenecer y los personajes terminan sintiéndose como viejos amigos, siempre me arrepentiré de no haberlos leído antes'
+)" >
+Leer más
+</button>
+    </article>
+    <article class="resena-card" id="resena-heroes">
+      <img src="../assents/4 (1).jpg" alt="Portada del primer libro de Percy Jackson y Los héroes del Olimpo de Rick Riordan, El heroe perdido"loading="lazy">
+      <h3>Percy Jackson y los héroes del Olimpo</h3>
+      <p class="estrellas">★★★★★</p>
+      <div class="tags-resena">
+        <span>⚡ Mitología</span>
+        <span>🤝 Amistad</span>
+        <span>📚 Saga</span>
+      </div>
+      <p class="frase-resena">
+        “Demostró que Percy Jackson podía ser aún más grande.”
+      </p>
+        <button class="ver-mas"
+onclick="abrirResena(
+'Héroes del Olimpo',
+'★★★★★',
+'Pensé que sería imposible superar Percy Jackson, pero esta saga logró expandir el universo de una forma increíble. Los nuevos personajes aportan perspectivas diferentes y las aventuras son todavía más grandes. Es una continuación que demuestra todo el potencial del mundo creado por Rick Riordan.'
+)" >
+Leer más
+</button>
+    </article>
+    <article class="resena-card" id="resena-lotr">
+      <img src="../assents/5 (1).jpg" alt="Portada del primer libro de El señor de los anillos de JK Tolkien, La comunidad del anillo"loading="lazy">
+      <h3>El señor de los anillos</h3>
+      <p class="estrellas">★★★★★</p>
+      <div class="tags-resena">
+        <span>🗺️ Viaje épico</span>
+        <span>🌿 Tierra Media</span>
+        <span>📚 trilogía</span>
+      </div>
+      <p class="frase-resena">
+        “Una aventura que se siente épica cada vez”
+      </p>
+     <button class="ver-mas"
+onclick="abrirResena(
+'El Señor de los Anillos',
+'★★★★★',
+'Una historia épica que marcó la fantasía para siempre. La construcción de la Tierra Media es impresionante y cada personaje aporta algo único al viaje. Es una lectura exigente y a lo mejor algo pesada, pero la sensación de aventura y compañerismo hace que valga completamente la pena..'
+)" >
+Leer más
+</button>
+    </article>
+    <article class="resena-card" id="resena-cazadores">
+      <img src="../assents/6 (1).jpg" alt="Portada del primer libro de Instrumentos mortales de Cassandra Clare, Ciudad de hueso"loading="lazy">
+      <h3>Cazadores de sombras, Instrumentos mortales</h3>
+      <p class="estrellas">★★★★★</p>
+      <div class="tags-resena">
+        <span>⚔️ Acción</span>
+        <span>🖤 Secretos</span>
+        <span> 📚Saga</span>
+      </div>
+      <p class="frase-resena">
+  "Una saga llena de aventuras, personajes inolvidables y un mundo al que siempre quiero volver."   
+   </p>
+   <button class="ver-mas"
+onclick="abrirResena(
+'Instrumentos Mortales',
+'★★★★★',
+'Esta saga tiene todo lo que disfruto en una historia: acción, humor, amistad, romance y personajes inolvidables. Cassandra Clare construyó un mundo fascinante que siempre logra atraparme. Cada libro amplía el universo y hace que quieras seguir explorándolo.'
+)" >
+Leer más
+</button>
+    </article>
+   <article class="resena-card">
+  <img src="../assents/biblio19.jpg" alt="Portada de Amigo imaginario"loading="lazy">
+  <h3>Amigo imaginario</h3>
+  <p class="estrellas">★★★★☆</p>
+  <div class="tags-resena">
+    <span>👻 Terror</span>
+    <span>😨 Tensión</span>
+    <span>📖 Autoconclusivo</span>
+  </div>
+  <p class="frase-resena">
+    "Una historia inquietante que sigue dando vueltas en la cabeza."
+  </p>
+<button class="ver-mas"
+onclick="abrirResena(
+'Amigo imaginario',
+'★★★★☆',
+'Una novela que mezcla terror, fantasía y misterio de una manera muy original. La atmósfera es inquietante y consigue generar tensión constantemente. Es una historia con un plot twist increíble y mantiene el interés hasta el final.'
+)" >
+Leer más
+</button>
+</article>
+<article class="resena-card">
+  <img src="../assents/biblio27.webp" alt="Portada de El principito"loading="lazy">
+  <h3>El principito</h3>
+  <p class="estrellas">★★★★☆</p>
+  <div class="tags-resena">
+    <span>🌍 Imaginación</span>
+    <span>💭 Reflexivo</span>
+    <span>📖 Autoconclusivo</span>
+  </div>
+  <p class="frase-resena">
+    "Una historia hermosa y reflexiva que deja huella."
+  </p>
+  <button class="ver-mas"
+onclick="abrirResena(
+'El Principito',
+'★★★★☆',
+'Un libro breve pero lleno de enseñanzas. Cada vez que se lee se descubren nuevos significados y reflexiones sobre la vida, la amistad y lo verdaderamente importante. Es una historia sencilla que logra transmitir mensajes universales.'
+)" >
+Leer más
+</button>
+</article>
+<article class="resena-card" id="resena-maze">
+  <img src="../assents/biblio10.webp" alt="Portada de Maze Runner"loading="lazy">
+  <h3>Maze runner</h3>
+  <p class="estrellas">★★★☆☆</p>
+  <div class="tags-resena">
+    <span>🏃 Supervivencia</span>
+    <span>🧩 Misterio</span>
+    <span>📚 Trilogía</span>
+  </div>
+  <p class="frase-resena">
+    "Cada respuesta abre nuevos interrogantes y hace imposible dejar de leer."
+  </p>
+  <button class="ver-mas"
+onclick="abrirResena(
+'Maze Runner',
+'★★★☆☆',
+'Desde el primer capítulo transmite misterio y tensión. La necesidad de descubrir qué está ocurriendo dentro del laberinto hace que sea imposible dejar de leer. Es una historia llena de acción y supervivencia que mantiene el interés constantemente.'
+)" >
+Leer más
+</button>
+</article>
+<article class="resena-card" id="resena-it">
+  <img src="../assents/biblio15.webp" alt="Portada de IT"loading="lazy">
+  <h3>IT</h3>
+  <p class="estrellas">★★★★★</p>
+  <div class="tags-resena">
+    <span>🎈 Terror</span>
+    <span>🤝 Amistad</span>
+    <span>📖 Autoconclusivo</span>
+  </div>
+  <p class="frase-resena">
+    "Mucho más que un libro de miedo: una historia sobre la amistad y enfrentar los propios temores."
+  </p>
+   <button class="ver-mas"
+onclick="abrirResena(
+'It',
+'★★★★☆',
+'Más que una historia de terror, es una historia sobre la amistad, el crecimiento y los miedos que nos acompañan. Stephen King logra crear una atmósfera inquietante mientras desarrolla personajes que se sienten reales. Una lectura intensa y muy fluida.'
+)" >
+Leer más
+</button>
+</article>
+<article class="resena-card" id="resena-dosmetros">
+  <img src="../assents/biblio20.webp" alt="Portada de A dos metros de ti"loading="lazy">
+  <h3>A dos metros de ti</h3>
+  <p class="estrellas">★★★★☆</p>
+  <div class="tags-resena">
+    <span>❤️ Romance</span>
+    <span>💔 Emotivo</span>
+    <span>📖 Autoconclusivo</span>
+  </div>
+  <p class="frase-resena">
+    "Una historia tierna y dolorosa que demuestra que el amor puede sentirse incluso a la distancia."
+  </p>
+  <button class="ver-mas"
+onclick="abrirResena(
+'A dos metros de ti',
+'★★★★☆',
+'Una historia emotiva que muestra cómo el amor puede existir incluso cuando las circunstancias parecen imposibles. Los personajes son fáciles de querer y la trama logra transmitir tanto esperanza como tristeza.'
+)" >
+Leer más
+</button>
+</article>
+<article class="resena-card" id="resena-violet">
+  <img src="../assents/biblio24.webp" alt="Portada de Violet y Finch"loading="lazy">
+  <h3>Violet y Finch</h3>
+  <p class="estrellas">★★★☆☆</p>
+  <div class="tags-resena">
+    <span>💔 Emotivo</span>
+    <span>💭 Reflexión</span>
+    <span>📖 Autoconclusivo</span>
+  </div>
+  <p class="frase-resena">
+    "Una historia tan hermosa como dolorosa que permanece en la memoria mucho después de terminarla."
+  </p>
+   <button class="ver-mas"
+onclick="abrirResena(
+'Violet y Finch',
+'★★★★☆',
+'Una historia profundamente emotiva sobre dos personas que intentan encontrar luz en momentos difíciles. Es un libro que habla de la importancia de las conexiones humanas y deja una sensación agridulce que permanece mucho tiempo después de terminarlo.'
+)" >
+Leer más
+</button>
+</article>
+</main>
+<div class="separador-magico">
+    ✦ ✦ ✦
+</div>
+<section class="entre-lectores">
+  <h2>🌙 Entre lectores</h2>
+  <p>
+    Ya conociste algunos de mis libros favoritos.  
+    Ahora me encantaría saber cuál historia te marcó a vos.
+  </p>
+  <form class="form-lectores">
+    <input type="text" placeholder="Tu nombre">
+    <textarea placeholder="¿Qué libro me recomendarías o cuál te marcó?"></textarea>
+    <button type="submit">Enviar mensaje ✨</button>
+  </form>
+  <p class="nota-lectores">
+  Gracias por dejar una pequeña huella en esta biblioteca.
+  </p>
+</section>
+<footer class="footer">
+    <div class="footer-contenido">
+        <div class="footer-logo">
+            <img src="../assents/logo7.png" alt="Logo">
+            <p>
+              Donde cada libro abre la puerta a otro mundo.
+            </p>
+        </div>
+        <div class="footer-redes">
+            <div class="iconos">
+                <a href="#">
+                <i class="fa-brands fa-goodreads"></i>
+                </a>
+                <a href="#">
+                    <i class="fa-brands fa-tiktok"></i>
+                </a>
+                <a href="#">
+                    <i class="fa-brands fa-pinterest"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-copy">
+        <p>© 2026 La Biblioteca de Mel</p>
+    </div>
+</footer>
+<div id="modal-resena" class="modal-sinopsis">
+  <div class="contenido-sinopsis">
+    <button class="cerrar-sinopsis"
+    onclick="cerrarResena()">
+      ×
+    </button>
+    <h3 id="titulo-resena"></h3>
+    <p id="estrellas-resena"></p>
+    <p id="texto-resena"></p>
+  </div>
+</div>
+<script>
+function abrirResena(titulo, estrellas, texto){
+    document.getElementById("titulo-resena").innerText = titulo;
+    document.getElementById("estrellas-resena").innerText = estrellas;
+    document.getElementById("texto-resena").innerText = texto;
+    document.getElementById("modal-resena").style.display = "flex";
+}
+function cerrarResena(){
+    document.getElementById("modal-resena").style.display = "none";
+}
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

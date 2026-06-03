@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Biblioteca de Mel</title>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alef:wght@400;700&family=Fanwood+Text:ital@0;1&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+     <header class="header"> 
+     <a href="../index.html" class="logo">
+    <img src="../assents/logo7.png" alt="Logo">
+    <h1>La Biblioteca de Mel</h1>
+</a>
+<nav class="menu">
+ <ul>
+<li><a href="../index.html">Inicio</a></li>
+<li><a href="./reseñas.html">Reseñas</a></li>
+<li><a href="./sobremi.html">Sobre mi</a></li>
+<li><a href="./lecturaspendientes.html">Lecturas pendientes</a></li>
+<li><a href="./biblioteca.html">Biblioteca</a></li>
+ </ul>
+</nav>
+  </header>
+<main>
+  <section class="pendientes">
+   <h2 class="titulo-pendientes">
+    ✦ Próximas historias ✦
+</h2>
+    <p class="intro-pendientes">
+     Mundos que todavía esperan su momento en mi biblioteca.
+    </p>
+    <button type="button"
+        class="cerrar-sinopsis"
+        onclick="cerrarSinopsis()">
+    ×
+</button>
+    <div class="pendientes-grid">
+      <div class="pendiente-card">
+        <img src="../assents/portada1.jpg" alt="Portada de Harry Potter y el misterio del principe de JK Rowling"loading="lazy"
+       onclick="abrirSinopsis('Harry Potter','Harry vuelve a Hogwarts mientras se revelan secretos del pasado de Voldemort y el peligro se acerca cada vez más.')"> 
+        <h3>Harry Potter y el misterio del principe</h3>
+        <p>JK Rowling</p>
+      </div>
+      <div class="pendiente-card">
+        <img src="../assents/portada2.jpg" alt="Portada de Cadena de Oro de Cassandra Clare"loading="lazy"
+       onclick="abrirSinopsis('Cadena de oro','Cordelia Carstairs llega a Londres y se ve envuelta en misterios, demonios y secretos entre los cazadores de sombras.')"> 
+        <h3>La cadena de oro</h3>
+        <p>Cassandra Clare</p>
+        </div>
+         <div class="pendiente-card">
+        <img src="../assents/portada3.jpg" alt="Portada de Los juegos del hambre de Suzanne Collins"loading="lazy"
+        onclick="abrirSinopsis('Los juegos del hambre','Katniss Everdeen se ofrece como voluntaria para participar en un brutal torneo donde solo puede haber un vencedor.')">
+        <h3>Los juegos del hambre</h3>
+        <p>Suzanne Collins</p>
+         </div>
+         <div class="pendiente-card">
+        <img src="../assents/portada4.jpg" alt="Portada de Nacidos de la bruma de Brandon Sanderson"loading="lazy"
+        onclick="abrirSinopsis('Nacidos de la bruma','En un imperio gobernado por un tirano inmortal, una joven ladrona descubre poderes extraordinarios que podrían cambiar el mundo.')">
+        <h3>Nacidos de la bruma</h3>
+        <p>Brandon Sanderson</p>
+         </div>
+         <div class="pendiente-card">
+        <img src="../assents/portada5.jpg" alt="Portada de Caraval de Stephanie Garber"loading="lazy"
+        onclick="abrirSinopsis('Caraval','Dos hermanas participan en un espectáculo mágico donde nada es lo que parece y la línea entre realidad e ilusión desaparece.')">
+        <h3>Caraval</h3>
+        <p> Stephanie Garber</p>
+         </div>
+         <div class="pendiente-card">
+        <img src="../assents/portada6.webp" alt="Portada del libro Principe cruel de Holly Black"loading="lazy"
+        onclick="abrirSinopsis('El príncipe cruel','Jude intenta encontrar su lugar en el peligroso mundo de las hadas mientras lucha por el poder y el respeto.')">
+        <h3>El principe cruel</h3>
+        <p>Holly Black</p>
+         </div>
+         <div class="pendiente-card">
+        <img src="../assents/portada7.webp" alt="Portada del libro el Resplandor de Stephen King"loading="lazy"
+        onclick="abrirSinopsis('El resplandor','Una familia pasa el invierno aislada en un hotel embrujado donde fuerzas oscuras comienzan a manifestarse.')">
+        <h3>El resplandor</h3>
+        <p>Stephen King</p>
+         </div>
+         <div class="pendiente-card">
+        <img src="../assents/portada8.jpg" alt="Portada del libro La biblioteca de la medianoche de Matt Haig"loading="lazy"
+        onclick="abrirSinopsis('La biblioteca de la medianoche','Entre la vida y la muerte existe una biblioteca donde cada libro muestra una vida diferente que pudo haber sido.')">
+        <h3>La bibloteca de la medianoche</h3>
+        <p>Matt Haig</p>
+         </div>
+         <div class="pendiente-card">
+        <img src="../assents/portada9.jpg" alt="Portada del libro De sangre y cenizas de Jennifer L. Armentrout"loading="lazy"
+        onclick="abrirSinopsis('De sangre y cenizas','Poppy ha sido criada para cumplir un destino sagrado, pero secretos y peligros cambiarán su vida para siempre.')">
+        <h3>De sangre y cenizas</h3>
+        <p>Jennifer L. Armentrout</p>
+         </div>
+          <div class="pendiente-card">
+        <img src="../assents/portada10.webp" alt="Portada del libro Verity de Colleen Hoover"loading="lazy"
+        onclick="abrirSinopsis('Verity','Una escritora encuentra unos manuscritos ocultos que revelan inquietantes secretos sobre una famosa autora.')">
+        <h3>Verity</h3>
+        <p>Colleen Hoover</p>
+          </div>
+           <div class="pendiente-card">
+        <img src="../assents/portada11.webp" alt="Portada del libro Seis de cuervos de Leigh Bardugo"loading="lazy"
+        onclick="abrirSinopsis('Seis de cuervos','Un grupo de criminales emprende una misión imposible que promete una fortuna y podría cambiar sus vidas.')">
+        <h3>Seis de cuervos</h3>
+        <p>Leigh Bardugo</p>
+           </div>
+            <div class="pendiente-card">
+        <img src="../assents/portada12.webp" alt="Portada del libro Asesino de brujas de Shelby Mahurin"loading="lazy"
+        onclick="abrirSinopsis('Asesino de brujas','Una bruja y un cazador de brujas se ven obligados a unir sus destinos en medio de peligros y magia.')">
+        <h3>Asesino de brujas</h3>
+        <p>Shelby Mahurin</p>
+            </div>
+              <div class="pendiente-card">
+        <img src="../assents/portada13.jpg" alt="Portada del libro Alguien esta mintiendo de Karen M. McManus"loading="lazy"
+        onclick="abrirSinopsis('Alguien está mintiendo','Cinco estudiantes entran en castigo, pero solo cuatro salen con vida. Todos son sospechosos.')">
+        <h3>Alguien esta mintiendo</h3>
+        <p>Karen M. McManus</p>
+              </div>
+        <div class="pendiente-card">
+        <img src="../assents/portada14.jpg" alt="Portada del libro Las crónicas de Narnia de C.S. Lewis "loading="lazy"
+        onclick="abrirSinopsis('Las crónicas de Narnia','Un grupo de niños descubre un mundo mágico habitado por criaturas fantásticas y antiguas profecías.')">
+        <h3>Las crónicas de Narnia</h3>
+        <p>C.S. Lewis</p>
+        </div>
+        <div class="pendiente-card">
+        <img src="../assents/portada15.jpg" alt="Portada del libro No soy un asesino serial de Dan Wells"loading="lazy"
+        onclick="abrirSinopsis('No soy un asesino serial','John Wayne Cleaver lucha contra sus impulsos oscuros mientras intenta detener a un asesino en serie.')">
+        <h3>No soy un asesino serial</h3>
+        <p>Dan Wells</p>
+        </div>
+        <div class="pendiente-card">
+        <img src="../assents/portada16.webp" alt="Portada del libro Cinder de Marissa Meyer"loading="lazy"
+        onclick="abrirSinopsis('Cinder','Una talentosa mecánica cyborg se ve envuelta en secretos, política y una amenaza que pone en peligro a todo el planeta.')">
+        <h3>Cinder</h3>
+        <p>Marissa Meyer</p>
+        </div>
+        <div class="pendiente-card">
+        <img src="../assents/portada17.jpg" alt="Portada del libro El archivo de V. E. Schwab"loading="lazy"
+        onclick="abrirSinopsis('El archivo','Mackenzie guarda los recuerdos de los muertos en un misterioso archivo oculto entre los mundos.')">
+        <h3>El archivo</h3>
+        <p>V. E. Schwab</p>
+        </div>
+        <div class="pendiente-card">
+        <img src="../assents/portada18.jpg" alt="Portada del libro La cabaña de William P. Young"loading="lazy"
+        onclick="abrirSinopsis('La cabaña','Tras una tragedia personal, un hombre recibe una invitación que cambiará para siempre su forma de ver la vida.')">
+        <h3>La cabaña</h3>
+        <p>William P. Young</p>
+          </div>
+    </div>
+  </section>
+</main>
+<footer class="footer">
+    <div class="footer-contenido">
+        <div class="footer-logo">
+            <img src="../assents/logo7.png" alt="Logo">
+            <p>
+              Donde cada libro abre la puerta a otro mundo.
+            </p>
+        </div>
+        <div class="footer-redes">
+            <div class="iconos">
+                <a href="#">
+                <i class="fa-brands fa-goodreads"></i>
+                </a>
+                <a href="#">
+                    <i class="fa-brands fa-tiktok"></i>
+                </a>
+                <a href="#">
+                    <i class="fa-brands fa-pinterest"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-copy">
+        <p>© 2026 La Biblioteca de Mel</p>
+    </div>
+</footer>
+<div id="modal-sinopsis" class="modal-sinopsis">
+  <div class="contenido-sinopsis">
+    <button class="cerrar-sinopsis" onclick="cerrarSinopsis()">×</button>
+    <h3 id="titulo-sinopsis">Sinopsis</h3>
+    <p id="texto-sinopsis"></p>
+  </div>
+</div>
+<script>
+function abrirSinopsis(titulo, texto){
+  document.getElementById("titulo-sinopsis").innerText = titulo;
+  document.getElementById("texto-sinopsis").innerText = texto;
+  document.getElementById("modal-sinopsis").style.display = "flex";
+}
+function cerrarSinopsis(){
+  document.getElementById("modal-sinopsis").style.display = "none";
+}
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
