@@ -296,11 +296,21 @@ Leer más
     Ya conociste algunos de mis libros favoritos.  
     Ahora me encantaría saber cuál historia te marcó a vos.
   </p>
-  <form class="form-lectores">
-    <input type="text" placeholder="Tu nombre">
-    <textarea placeholder="¿Qué libro me recomendarías o cuál te marcó?"></textarea>
-    <button type="submit">Enviar mensaje ✨</button>
-  </form>
+ <form class="form-lectores" name="entre-lectores" method="POST" data-netlify="true">
+  <input type="hidden" name="form-name" value="entre-lectores">
+  <input 
+    type="text" 
+    name="nombre" 
+    placeholder="Tu nombre" 
+    required>
+  <textarea 
+    name="mensaje" 
+    placeholder="¿Qué libro me recomendarías o cuál te marcó?"
+    required></textarea>
+  <button type="submit">
+    Enviar mensaje ✨
+  </button>
+</form>
   <p class="nota-lectores">
   Gracias por dejar una pequeña huella en esta biblioteca.
   </p>
