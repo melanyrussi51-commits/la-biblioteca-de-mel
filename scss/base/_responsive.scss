@@ -1,0 +1,544 @@
+
+
+@media (max-width: 1024px){
+
+  .header{
+    padding:20px 25px;
+    flex-direction:column;
+    gap:15px;
+    text-align:center;
+  }
+
+  .menu{
+    margin-left:0;
+  }
+
+  .menu ul{
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:15px;
+  }
+
+  .hero{
+    height:60vh;
+    padding-left:0;
+    margin:15px;
+    background-position:center;
+  }
+
+  .galeria,
+  .pendientes-grid,
+  .biblioteca-grid{
+    justify-content:center;
+  }
+
+  .timeline-contenedor{
+    grid-template-columns:repeat(2, 1fr);
+  }
+
+ 
+  .favorito-texto{
+    text-align:center;
+  }
+}
+
+@media (max-width: 768px){
+
+  body{
+    overflow-x:hidden;
+  }
+
+  .logo{
+    flex-direction:column;
+    gap:5px;
+  }
+
+  .logo img{
+    width:80px;
+    height:80px;
+  }
+
+  .logo h1{
+    font-size:2rem;
+  }
+
+  .menu ul{
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:12px;
+  }
+
+    .menu a{
+    font-size:0.95rem;
+    padding:4px 8px;
+  }
+
+
+  .bienvenida{
+    font-size:1rem;
+    padding:0 20px;
+    margin-bottom:20px;
+  }
+
+  .hero{
+    height:45vh;
+    border-radius:15px;
+  }
+
+  .frase-literaria{
+    width:90%;
+    font-size:1.1rem;
+    padding:15px;
+    margin:35px auto;
+  }
+
+  .libros h2,
+  .titulo-pendientes,
+  .titulo-biblioteca,
+  .titulo-resenas,
+  .favorito-mes h3{
+    font-size:2.1rem;
+  }
+
+  .galeria{
+    gap:15px;
+    margin-top:25px;
+  }
+
+  .item{
+    width:130px;
+  }
+
+  .item img{
+    width:120px;
+    height:180px;
+  }
+
+  .descripcion-libro{
+    width:90%;
+    max-width:420px;
+    padding:15px;
+    font-size:0.95rem;
+  }
+
+  .btn-magico{
+    padding:8px 16px;
+    font-size:0.85rem;
+  }
+
+  .favorito-mes{
+    width:90%;
+    margin:55px auto 40px;
+    padding:18px;
+  }
+
+  .favorito-contenido img{
+    width:120px;
+    height:180px;
+  }
+
+  .sobre-contenido{
+    flex-direction:column;
+    text-align:center;
+  }
+
+  .sobre-imagen img{
+    width:280px;
+  }
+
+  .timeline-contenedor{
+    grid-template-columns:1fr;
+  }
+
+  .pendiente-card,
+  .libro-biblioteca{
+    width:120px;
+  }
+
+  .pendiente-card img,
+  .libro-biblioteca img{
+    width:110px;
+    height:165px;
+  }
+
+  .resenas-grid{
+    grid-template-columns:1fr;
+    justify-items:center;
+  }
+
+  .resena-card{
+    max-width:260px;
+  }
+
+  .entre-lectores{
+    width:90%;
+    max-width:390px;
+  }
+
+  .footer-contenido{
+    flex-direction:column;
+    align-items:center;
+    text-align:center;
+  }
+}
+
+@media (max-width: 480px){
+
+  .header{
+    padding:12px;
+  }
+
+  .logo h1{
+    font-size:1.6rem;
+  }
+
+  .menu a{
+    font-size:0.9rem;
+  }
+
+  .hero{
+    height:35vh;
+    margin:10px;
+  }
+
+  .libros h2,
+  .titulo-pendientes,
+  .titulo-biblioteca,
+  .titulo-resenas,
+  .favorito-mes h3{
+    font-size:1.8rem;
+  }
+
+  .item{
+    width:110px;
+  }
+
+  .item img{
+    width:100px;
+    height:155px;
+  }
+
+  .pendiente-card,
+  .libro-biblioteca{
+    width:105px;
+  }
+
+  .pendiente-card img,
+  .libro-biblioteca img{
+    width:95px;
+    height:145px;
+  }
+
+  .pendiente-card h3,
+  .libro-biblioteca h4{
+    font-size:0.85rem;
+  }
+
+  .pendiente-card p,
+  .libro-biblioteca p{
+    font-size:0.75rem;
+  }
+
+  .descripcion-libro{
+    font-size:0.9rem;
+  }
+
+  .favorito-contenido img{
+    width:105px;
+    height:160px;
+  }
+
+  .resena-card{
+    max-width:230px;
+  }
+
+  .resena-card img{
+    width:100px;
+    height:150px;
+  }
+  }
+  @media(max-width:768px){
+    .destacados-mes{
+        width:90%;
+    }
+
+    .destacado-slide{
+        grid-template-columns:1fr;
+        text-align:center;
+         position:relative;
+    z-index:1;
+    }
+
+    .destacado-slide h3{
+        text-align:center;
+    }
+
+    .destacado-slide img{
+        margin:auto;
+    }
+    .destacados-mes .carousel-control-prev{
+        left:5px;
+    }
+
+    .destacados-mes .carousel-control-next{
+        right:5px;
+    }
+
+    .destacados-mes .carousel-control-prev,
+    .destacados-mes .carousel-control-next{
+        width:38px;
+        height:38px;
+    }
+}
+
+@media(max-width:768px){
+
+    body{
+        overflow-x:hidden;
+    }
+
+    .header{
+        flex-direction:column;
+        padding:15px;
+        gap:12px;
+        text-align:center;
+    }
+
+    .logo{
+        flex-direction:column;
+    }
+
+    .logo img{
+        width:80px;
+        height:80px;
+    }
+
+    .logo h1{
+        font-size:1.9rem;
+    }
+
+    .menu{
+        margin-left:0;
+    }
+
+     .menu ul{
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:12px;
+  }
+
+    .hero{
+        height:40vh;
+        margin:10px;
+        padding-left:0;
+        background-position: center top;
+    }
+
+    .galeria{
+        gap:15px;
+    }
+
+    .item{
+        width:130px;
+    }
+
+    .item img{
+        width:120px;
+        height:180px;
+    }
+
+    .descripcion-libro{
+        width:90%;
+        max-width:420px;
+    }
+
+    .destacados-mes{
+        width:90%;
+        max-width:420px;
+        margin:55px auto 40px;
+    }
+
+    .destacado-slide{
+        grid-template-columns:1fr;
+        text-align:center;
+        padding:22px;
+        min-height:auto;
+    }
+
+    .destacado-slide h3{
+        text-align:center;
+        font-size:1.5rem;
+    }
+
+    .destacado-cita h3{
+        font-size:1.1rem;
+    }
+
+    .destacado-slide img{
+        width:115px;
+        height:170px;
+        margin:auto;
+    }
+
+    .destacados-mes .carousel-control-prev{
+        left:5px;
+    }
+
+    .destacados-mes .carousel-control-next{
+        right:5px;
+    }
+
+    .destacados-mes .carousel-control-prev,
+    .destacados-mes .carousel-control-next{
+        width:36px;
+        height:36px;
+        background:rgba(37,52,79,0.95);
+    }
+
+    .pendientes-grid,
+    .biblioteca-grid{
+        justify-content:center;
+    }
+
+    .timeline-contenedor{
+        grid-template-columns:1fr;
+    }
+
+    .resenas-grid{
+        grid-template-columns:1fr;
+        justify-items:center;
+    }
+
+    .footer-contenido{
+        flex-direction:column;
+        align-items:center;
+        text-align:center;
+    }
+}
+
+@media(max-width:480px){
+
+    .logo h1{
+        font-size:1.6rem;
+    }
+
+    .menu a{
+        font-size:0.9rem;
+    }
+
+    .hero{
+        height:35vh;
+    }
+
+    .libros h2,
+    .titulo-biblioteca,
+    .titulo-pendientes,
+    .titulo-resenas,
+    .destacado-slide h3{
+        font-size:1.7rem;
+    }
+
+    .item{
+        width:110px;
+    }
+
+    .item img{
+        width:100px;
+        height:155px;
+    }
+
+    .destacado-slide{
+        padding:18px;
+    }
+
+    .destacado-slide img{
+        width:100px;
+        height:150px;
+    }
+
+    .destacado-slide p{
+        font-size:0.9rem;
+    }
+}
+
+
+
+
+@media (min-width: 1200px){
+
+    main{
+        max-width:1400px;
+        margin:0 auto;
+    }
+
+    .hero{
+        max-width:1250px;
+        height:75vh;
+        margin:25px auto;
+    }
+
+    .galeria{
+        max-width:1150px;
+        margin-left:auto;
+        margin-right:auto;
+    }
+
+    .descripcion-libro{
+        max-width:430px;
+    }
+
+    .destacados-mes{
+        max-width:780px;
+    }
+
+    .biblioteca{
+        max-width:1250px;
+        margin:0 auto;
+    }
+
+    .biblioteca-grid{
+        max-width:1150px;
+    }
+
+    .resenas{
+        max-width:1250px;
+        margin:0 auto;
+    }
+
+    .resenas-grid{
+        max-width:1100px;
+        margin:0 auto;
+    }
+
+    .pendientes{
+        max-width:1250px;
+        margin:0 auto;
+    }
+
+    .timeline-contenedor{
+        max-width:950px;
+    }
+
+    .sobre-contenido{
+        max-width:1100px;
+    }
+}
+@media (min-width: 1600px){
+
+    main{
+        max-width:1350px;
+    }
+
+    .hero{
+        height:70vh;
+    }
+
+    .footer-contenido{ 
+        max-width:1200px;
+        margin:0 auto;
+    }
+}

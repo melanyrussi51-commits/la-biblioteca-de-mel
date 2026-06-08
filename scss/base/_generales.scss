@@ -18,3 +18,16 @@ body {
     opacity:1;
     }
 }
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible{
+    outline:2px solid variables.$color-principal;
+    outline-offset:4px;
+    box-shadow:0 0 12px rgba(232,217,143,0.4);
+}
+
+a:active,
+button:active{
+    transform:scale(0.97);
+}
