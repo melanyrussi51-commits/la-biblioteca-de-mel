@@ -1,0 +1,20 @@
+@use "variables";
+
+h1,h2,h3 {
+  font-family: variables.$fuente-titulos;
+  font-weight: 500;
+  font-style: normal;
+  color: variables.$color-principal;
+}
+body {
+    background-color:variables.$color-fondo ;
+    animation:fondo 1s ease;
+    }
+    @keyframes fondo{
+    from{
+    opacity:0;
+    }
+    to{
+    opacity:1;
+    }
+}
