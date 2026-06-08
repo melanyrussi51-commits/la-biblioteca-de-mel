@@ -1,4 +1,18 @@
-@use "variables" ;
-@use "mixins";
-@use "styles" ;
+@use "base/variables";
+@use "base/reset";
+@use "base/generales";
 
+@use "utilities/mixins";
+@use "utilities/extends";
+
+@use "components/header";
+@use "components/footer";
+@use "components/buttons";
+@use "components/cards";
+@use "components/modals";
+
+@use "pages/index";
+@use "pages/sobremi";
+@use "pages/biblioteca";
+@use "pages/pendientes";
+@use "pages/resenas";
