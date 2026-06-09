@@ -1,23 +1,34 @@
 @use "variables";
 
-h1,h2,h3 {
-  font-family: variables.$fuente-titulos;
-  font-weight: 500;
-  font-style: normal;
-  color: variables.$color-principal;
+h1,h2,h3{
+    font-family:variables.$fuente-titulos;
+    font-weight:500;
+    font-style:normal;
+    color:variables.$color-principal;
 }
-body {
-    background-color:variables.$color-fondo ;
+
+body{
+    background-color:variables.$color-fondo;
+    color:variables.$color-texto;
+    font-family:variables.$fuente-texto;
     animation:fondo 1s ease;
-    }
-    @keyframes fondo{
+}
+
+@keyframes fondo{
     from{
-    opacity:0;
+        opacity:0;
     }
+
     to{
-    opacity:1;
+        opacity:1;
     }
 }
+
+a,
+button{
+    transition:.3s;
+}
+
 a:focus-visible,
 button:focus-visible,
 input:focus-visible,
