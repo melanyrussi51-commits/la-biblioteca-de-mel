@@ -57,9 +57,14 @@ button:active {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
+  border-bottom: 1px solid rgba(232, 217, 143, 0.25);
+  box-shadow: 0 4px 18px rgba(12, 10, 35, 0.25);
+  margin-bottom: 25px;
 }
 .header h1 {
   margin: 0;
+  font-size: 2.2rem;
   letter-spacing: 1px;
   transition: 0.3s;
   text-shadow: 0 0 10px rgba(221, 210, 151, 0.3);
@@ -111,8 +116,8 @@ button:active {
   text-decoration: none;
 }
 .logo img {
-  width: 120px;
-  height: 120px;
+  width: 100px;
+  height: 100px;
   object-fit: cover;
   transition: 0.3s;
   animation: flotar 3s ease-in-out infinite;
@@ -122,39 +127,6 @@ button:active {
   filter: drop-shadow(0 0 15px rgba(221, 210, 151, 0.8));
 }
 
-.titulo-logo {
-  text-decoration: none;
-}
-.titulo-logo h1 {
-  color: #E8D98F;
-  transition: 0.3s;
-}
-.titulo-logo:hover h1 {
-  color: #f5e6b3;
-  text-shadow: 0 0 10px rgba(221, 210, 151, 0.5);
-}
-
-@keyframes aparecer {
-  from {
-    opacity: 0;
-    transform: translateY(-20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-@keyframes flotar {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-6px);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
 .footer {
   border-top: 1px solid rgba(221, 210, 151, 0.3);
   background-color: #1b2740;
