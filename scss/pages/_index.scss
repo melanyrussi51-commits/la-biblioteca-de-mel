@@ -196,6 +196,7 @@
 .destacados-mes{
     max-width:760px;
     margin:90px auto 60px;
+    overflow:hidden;
 
     .carousel{
         position:relative;
@@ -214,18 +215,17 @@
         top:50%;
         transform:translateY(-50%);
         opacity:1;
-
         background:rgba(37,52,79,0.9);
         border:1px solid rgba(232,217,143,0.4);
         border-radius:50%;
     }
 
     .carousel-control-prev{
-        left:-55px;
+        left:10px;
     }
 
     .carousel-control-next{
-        right:-55px;
+        right:10px;
     }
 
     .carousel-control-prev-icon,
