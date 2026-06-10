@@ -1,229 +1,298 @@
 <!DOCTYPE html>
-<html lang="es">      
+<html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Melany Russi">
-    <meta name="description"
-content="La Biblioteca de Mel es un rincón literario donde comparto reseñas, libros favoritos, lecturas pendientes y recomendaciones para amantes de la lectura.">
-  <meta name="keywords"
-content="libros, reseñas, lectura, fantasía, Harry Potter, Percy Jackson, Biblioteca de Mel">
-<title>La Biblioteca de Mel | Reseñas y recomendaciones de libros</title>
+    <meta name="description" content="La Biblioteca de Mel es un rincón literario donde comparto reseñas, libros favoritos, lecturas pendientes y recomendaciones para amantes de la lectura.">
+    <meta name="keywords" content="libros, reseñas, lectura, fantasía, Harry Potter, Percy Jackson, Biblioteca de Mel">
+
+    <title>La Biblioteca de Mel | Reseñas y recomendaciones de libros</title>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Alef:wght@400;700&family=Fanwood+Text:ital@0;1&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
-<link rel="stylesheet" href="./css/styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alef:wght@400;700&family=Fanwood+Text:ital@0;1&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
+
 <body>
-    <header class="header"> 
-       <a href="index.html" class="logo">
-    <img src="./assents/logo7.png" alt="Logo">
-    <h1>La Biblioteca de Mel</h1>
-</a>
-<nav class="menu">
- <ul>
-<li><a href="#">Inicio</a></li>
-<li><a href="./pages/reseñas.html">Reseñas</a></li>
-<li><a href="./pages/sobremi.html">Sobre mi</a></li>
-<li><a href="./pages/lecturaspendientes.html">Lecturas pendientes</a></li>
-<li><a href="./pages/biblioteca.html">Biblioteca</a></li>
- </ul>
-</nav>
-   </header>
-   <main>
-    <p class="bienvenida">
-  Bienvenidos a mi rincón literario, un lugar donde guardo las historias que me marcaron.
-</p>
-<section class="hero">
-  <div class="overlay"> </div>
-</section>
-<section class="frase-literaria">
-    <p>
-        “"Un lector vive mil vidas antes de morir; quien no lee, vive solo una."
-— George R. R. Martin”
-    </p>
-</section>
- <section class="libros">
-<h2>Mis libros favoritos</h2>
-    <div class="galeria">
-          <div class="item">
-  <img src="./assents/1,1 (1).webp"
-alt="Portada del libro Ángel mecánico de Cassandra Clare"
-loading="lazy"  decoding="async"
-onclick="mostrarDescripcion(
-'En el Londres victoriano, Tessa Gray descubre un mundo oculto lleno de cazadores de sombras, magia y peligros.',
-'./pages/reseñas.html#resena-angel',
-this
-)">
-          </div>
-           <div class="item">  
-  <img src="./assents/2 (4) (1).jpg"
-alt="Portada del libro Harry Potter y la piedra filosofal de JK Rowling"
-loading="lazy" decoding="async"
-onclick="mostrarDescripcion(
-'Harry Potter descubre que es un mago y comienza sus estudios en Hogwarts, donde vivirá aventuras, amistades y misterios mágicos.',
-'./pages/reseñas.html#resena-harry',
-this
-)">
-           </div>
-  <div class="item">
-  <img src="./assents/3 (3) (1).jpg"
-alt="Portada del libro Percy Jackson y el ladrón del rayo de Rick Riordan"
-loading="lazy" decoding="async"
-onclick="mostrarDescripcion( 
-'Percy y sus amigos deben encontrar el Vellocino de Oro para salvar el Campamento Mestizo mientras enfrentan monstruos y desafíos.',
-'./pages/reseñas.html#resena-percy',
-this
-)">
-</div>
-   <div class="item">
- <img src="./assents/4 (1).jpg"
-alt="Portada del libro El héroe perdido de Rick Riordan"
-loading="lazy" decoding="async"
-onclick="mostrarDescripcion(
-'Una nueva generación de semidioses debe unirse para detener el despertar de Gea.',
-'./pages/reseñas.html#resena-heroes',
-this
-)">
-</div>
- <div class="item">
-  <img src="./assents/5 (1).jpg"
-alt="Portada del libro El señor de los anillos"
-loading="lazy" decoding="async"
-onclick="mostrarDescripcion(
-'Frodo Bolsón emprende un viaje épico para destruir el Anillo Único.',
-'./pages/reseñas.html#resena-lotr',
-this
-)">
-</div>
-<div class="item">
- <img src="./assents/6 (1).jpg"
-alt="Portada del libro Ciudad de hueso"
-loading="lazy" decoding="async"
-onclick="mostrarDescripcion(
-'Clary Fray descubre el mundo de los cazadores de sombras.',
-'./pages/reseñas.html#resena-cazadores',
-this
-)">
-</div>
-<div id="descripcion-libro" class="descripcion-libro">
-    <h3>Sobre este libro</h3>
-    <p id="texto-descripcion">
-        Haz clic en un libro para leer su descripción.
-    </p>
-   <a id="boton-libro" href="#" class="btn-magico">
-    ✨ Descubrir más
-</a>
-</div>
- </section>
- <div class="separador-favorito">
-    ✦ ✦ ✦
-</div>
-<section class="destacados-mes">
-  <div id="carouselDestacados" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <div class="destacado-slide">
-          <img src="./assents/delmes.webp" alt="Harry Potter y el cáliz del fuego">
-          <div>
-            <span>📖 Libro destacado</span>
-            <h3>Harry Potter y el cáliz del fuego</h3>
+    <header class="header">
+        <a href="index.html" class="logo" aria-label="Ir al inicio de La Biblioteca de Mel">
+            <img src="./assents/logo7.png" alt="Logo de La Biblioteca de Mel" width="100" height="100">
+            <h1>La Biblioteca de Mel</h1>
+        </a>
+
+        <nav class="menu" aria-label="Navegación principal">
+            <ul>
+                <li><a href="index.html" aria-current="page">Inicio</a></li>
+                <li><a href="./pages/reseñas.html">Reseñas</a></li>
+                <li><a href="./pages/sobremi.html">Sobre mí</a></li>
+                <li><a href="./pages/lecturaspendientes.html">Lecturas pendientes</a></li>
+                <li><a href="./pages/biblioteca.html">Biblioteca</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <p class="bienvenida">
+            Bienvenidos a mi rincón literario, un lugar donde guardo las historias que me marcaron.
+        </p>
+
+        <section class="hero" aria-label="Imagen principal de una biblioteca mágica">
+            <div class="overlay" aria-hidden="true"></div>
+        </section>
+
+        <section class="frase-literaria" aria-label="Frase literaria destacada">
             <p>
-              Este mes le dí la oportunidad y quedé totalmente enamorada de este universo mágico.
+                “Un lector vive mil vidas antes de morir; quien no lee, vive solo una.”
+                <br>
+                — George R. R. Martin
             </p>
-            <a href="./pages/reseñas.html#resena-harry" class="btn-favorito">
-              Leer reseña
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <div class="destacado-slide">
-          <img src="./assents/destacado.jpg" alt="Rick Riordan">
-          <div>
-            <span>✍️ Autor destacado</span>
-            <h3>Rick Riordan</h3>
-            <p>
-              El autor que me hizo descubrir cuánto podía disfrutar perderme entre las paginas de un libro.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <div class="destacado-slide destacado-cita">
-          <div>
-            <span>🌙 Cita destacada</span>
-            <h3>“—Siempre hay que tener cuidado con los libros —dijo Tessa—, y con lo que contienen, porque las palabras tienen el poder de transformarnos.”</h3>
-            <p>— Cassandra Clare</p>
-          </div>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <div class="destacado-slide">
-          <img src="./assents/biblio27.webp" alt="El Principito">
-          <div>
-            <span>✨ Recomendación especial</span>
-            <h3>El Principito</h3>
-            <p>
-             Cada vez que leas este libro vas a encontrar nuevos significados
-            </p>
-             <a href="./pages/reseñas.html#reseña" class="btn-favorito">
-              Leer reseña
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselDestacados" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon"></span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselDestacados" data-bs-slide="next">
-      <span class="carousel-control-next-icon"></span>
-    </button>
-  </div>
-</section>
-   </main>
- <footer class="footer">
-    <div class="footer-contenido">
-        <div class="footer-logo">
-            <img src="./assents/logo7.png" alt="Logo">
-            <p>Para almas lectoras que creen en la magia de los libros.</p>
-        </div>
-        <div class="footer-redes">
-             <div class="iconos">
-            <a href="#">
-        <i class="fa-brands fa-goodreads"></i>
-    </a>
-    <a href="#">
-        <i class="fa-brands fa-tiktok"></i>
-    </a>
-    <a href="#">
-        <i class="fa-brands fa-pinterest"></i>
-    </a>
-        </div>
-        </div>
-    </div>
-    <div class="footer-copy">
-        <p>© 2026 La Biblioteca de Mel</p>
-    </div>
-</footer>
-<script>
-function mostrarDescripcion(texto, link, elemento){
+        </section>
 
-    document.getElementById("texto-descripcion").innerText = texto;
+        <section class="libros" aria-labelledby="titulo-favoritos">
+            <h2 id="titulo-favoritos">Mis libros favoritos</h2>
 
-    const boton = document.getElementById("boton-libro");
-    boton.href = link;
-    boton.style.display = "inline-block";
+            <div class="galeria">
+                <div class="item">
+                    <img
+                        src="./assents/1,1 (1).webp"
+                        alt="Portada del libro Ángel mecánico de Cassandra Clare"
+                        loading="lazy"
+                        decoding="async"
+                        tabindex="0"
+                        role="button"
+                        data-link="./pages/reseñas.html#resena-angel"
+                        data-descripcion="En el Londres victoriano, Tessa Gray descubre un mundo oculto lleno de cazadores de sombras, magia y peligros.">
+                </div>
 
-    document.querySelectorAll(".item").forEach(item => {
-        item.classList.remove("seleccionado");
-    });
+                <div class="item">
+                    <img
+                        src="./assents/2 (4) (1).jpg"
+                        alt="Portada del libro Harry Potter y la piedra filosofal de J. K. Rowling"
+                        loading="lazy"
+                        decoding="async"
+                        tabindex="0"
+                        role="button"
+                        data-link="./pages/reseñas.html#resena-harry"
+                        data-descripcion="Harry Potter descubre que es un mago y comienza sus estudios en Hogwarts, donde vivirá aventuras, amistades y misterios mágicos.">
+                </div>
 
-    elemento.parentElement.classList.add("seleccionado");
-}
-</script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+                <div class="item">
+                    <img
+                        src="./assents/3 (3) (1).jpg"
+                        alt="Portada del libro Percy Jackson y el ladrón del rayo de Rick Riordan"
+                        loading="lazy"
+                        decoding="async"
+                        tabindex="0"
+                        role="button"
+                        data-link="./pages/reseñas.html#resena-percy"
+                        data-descripcion="Percy y sus amigos deben encontrar el Vellocino de Oro para salvar el Campamento Mestizo mientras enfrentan monstruos y desafíos.">
+                </div>
+
+                <div class="item">
+                    <img
+                        src="./assents/4 (1).jpg"
+                        alt="Portada del libro El héroe perdido de Rick Riordan"
+                        loading="lazy"
+                        decoding="async"
+                        tabindex="0"
+                        role="button"
+                        data-link="./pages/reseñas.html#resena-heroes"
+                        data-descripcion="Una nueva generación de semidioses debe unirse para detener el despertar de Gea.">
+                </div>
+
+                <div class="item">
+                    <img
+                        src="./assents/5 (1).jpg"
+                        alt="Portada del libro El señor de los anillos"
+                        loading="lazy"
+                        decoding="async"
+                        tabindex="0"
+                        role="button"
+                        data-link="./pages/reseñas.html#resena-lotr"
+                        data-descripcion="Frodo Bolsón emprende un viaje épico para destruir el Anillo Único.">
+                </div>
+
+                <div class="item">
+                    <img
+                        src="./assents/6 (1).jpg"
+                        alt="Portada del libro Ciudad de hueso de Cassandra Clare"
+                        loading="lazy"
+                        decoding="async"
+                        tabindex="0"
+                        role="button"
+                        data-link="./pages/reseñas.html#resena-cazadores"
+                        data-descripcion="Clary Fray descubre el mundo de los cazadores de sombras.">
+                </div>
+
+                <div id="descripcion-libro" class="descripcion-libro" aria-live="polite">
+                    <h3>Sobre este libro</h3>
+                    <p id="texto-descripcion">
+                        Haz clic en un libro para leer su descripción.
+                    </p>
+                    <a id="boton-libro" href="./pages/reseñas.html" class="btn-magico">
+                        ✨ Descubrir más
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <div class="separador-favorito" aria-hidden="true">
+            ✦ ✦ ✦
+        </div>
+
+        <section class="destacados-mes" aria-label="Destacados del mes">
+            <div id="carouselDestacados" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <article class="carousel-item active">
+                        <div class="destacado-slide">
+                            <img
+                                src="./assents/delmes.webp"
+                                alt="Portada de Harry Potter y el cáliz del fuego"
+                                loading="lazy"
+                                decoding="async">
+
+                            <div>
+                                <span>📖 Libro destacado</span>
+                                <h3>Harry Potter y el cáliz del fuego</h3>
+                                <p>
+                                    Este mes le di la oportunidad y quedé totalmente enamorada de este universo mágico.
+                                </p>
+                                <a href="./pages/reseñas.html#resena-harry" class="btn-favorito">
+                                    Leer reseña
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="carousel-item">
+                        <div class="destacado-slide">
+                            <img
+                                src="./assents/destacado.jpg"
+                                alt="Fotografía de Rick Riordan"
+                                loading="lazy"
+                                decoding="async">
+
+                            <div>
+                                <span>✍️ Autor destacado</span>
+                                <h3>Rick Riordan</h3>
+                                <p>
+                                    El autor que me hizo descubrir cuánto podía disfrutar perderme entre las páginas de un libro.
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="carousel-item">
+                        <div class="destacado-slide destacado-cita">
+                            <div>
+                                <span>🌙 Cita destacada</span>
+                                <h3>
+                                    “Siempre hay que tener cuidado con los libros y con lo que contienen, porque las palabras tienen el poder de transformarnos.”
+                                </h3>
+                                <p>— Cassandra Clare</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="carousel-item">
+                        <div class="destacado-slide">
+                            <img
+                                src="./assents/biblio27.webp"
+                                alt="Portada del libro El Principito"
+                                loading="lazy"
+                                decoding="async">
+
+                            <div>
+                                <span>✨ Recomendación especial</span>
+                                <h3>El Principito</h3>
+                                <p>
+                                    Cada vez que leas este libro vas a encontrar nuevos significados.
+                                </p>
+                                <a href="./pages/reseñas.html" class="btn-favorito">
+                                    Leer reseña
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselDestacados" data-bs-slide="prev" aria-label="Ver destacado anterior">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                </button>
+
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselDestacados" data-bs-slide="next" aria-label="Ver destacado siguiente">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                </button>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-contenido">
+            <div class="footer-logo">
+                <img src="./assents/logo7.png" alt="Logo de La Biblioteca de Mel" width="100" height="100">
+                <p>Para almas lectoras que creen en la magia de los libros.</p>
+            </div>
+
+            <div class="footer-redes">
+                <div class="iconos">
+                    <a href="#" aria-label="Ir a Goodreads">
+                        <i class="fa-brands fa-goodreads" aria-hidden="true"></i>
+                    </a>
+
+                    <a href="#" aria-label="Ir a TikTok">
+                        <i class="fa-brands fa-tiktok" aria-hidden="true"></i>
+                    </a>
+
+                    <a href="#" aria-label="Ir a Pinterest">
+                        <i class="fa-brands fa-pinterest" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-copy">
+            <p>© 2026 La Biblioteca de Mel</p>
+        </div>
+    </footer>
+
+    <script>
+        const libros = document.querySelectorAll(".item img");
+        const textoDescripcion = document.getElementById("texto-descripcion");
+        const botonLibro = document.getElementById("boton-libro");
+
+        function mostrarDescripcion(elemento){
+            textoDescripcion.textContent = elemento.dataset.descripcion;
+            botonLibro.href = elemento.dataset.link;
+            botonLibro.style.display = "inline-block";
+
+            document.querySelectorAll(".item").forEach(item => {
+                item.classList.remove("seleccionado");
+            });
+
+            elemento.parentElement.classList.add("seleccionado");
+        }
+
+        libros.forEach(libro => {
+            libro.addEventListener("click", () => {
+                mostrarDescripcion(libro);
+            });
+
+            libro.addEventListener("keydown", evento => {
+                if(evento.key === "Enter" || evento.key === " "){
+                    evento.preventDefault();
+                    mostrarDescripcion(libro);
+                }
+            });
+        });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+

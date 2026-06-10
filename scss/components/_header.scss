@@ -1,85 +1,97 @@
 @use "../base/variables";
 
-.header{
-    padding:20px 50px;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 
-    border-bottom:2px solid rgba(232,217,143,0.35);
-    box-shadow:0 4px 18px rgba(12,10,35,0.25);
-    margin-bottom:25px;
+    margin-bottom: 25px;
+    padding: 20px 50px;
 
-    h1{
-        margin:0;
-        font-size:2.2rem;
-        letter-spacing:1px;
-        transition:.3s;
-        text-shadow:0 0 10px rgba(221,210,151,0.3);
-        animation:aparecer 1s ease;
+    border-bottom: 2px solid rgba(232, 217, 143, .35);
+    box-shadow: 0 4px 18px rgba(12, 10, 35, .25);
 
-        &:hover{
-            transform:scale(1.03);
-            color:#f5e6b3;
+    h1 {
+        margin: 0;
+
+        font-size: 2.2rem;
+        letter-spacing: 1px;
+
+        text-shadow: 0 0 10px rgba(221, 210, 151, .3);
+        transition: all .3s ease;
+        animation: aparecer 1s ease;
+
+        &:hover {
+            color: #f5e6b3;
+            transform: scale(1.03);
         }
     }
 }
 
-.menu{
-    margin-left:auto;
+.menu {
+    margin-left: auto;
 
-    ul{
-        display:flex;
-        gap:30px;
-        margin:0;
-        padding:0;
-        list-style:none;
+    ul {
+        display: flex;
+        gap: 30px;
+
+        margin: 0;
+        padding: 0;
+
+        list-style: none;
     }
 
-    a{
-        text-decoration:none;
-        color:variables.$color-principal;
-        font-size:18px;
-        transition:.3s;
-        position:relative;
+    a {
+        position: relative;
 
-        &:hover{
-            color:#f5e6b3;
+        color: variables.$color-principal;
+        text-decoration: none;
 
-            &::after{
-                width:100%;
+        font-size: 18px;
+
+        transition: all .3s ease;
+
+        &::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -5px;
+
+            width: 0;
+            height: 2px;
+
+            background: variables.$color-principal;
+            transition: all .3s ease;
+        }
+
+        &:hover {
+            color: #f5e6b3;
+
+            &::after {
+                width: 100%;
             }
         }
-
-        &::after{
-            content:"";
-            position:absolute;
-            left:0;
-            bottom:-5px;
-            width:0;
-            height:2px;
-            background:variables.$color-principal;
-            transition:.3s;
-        }
     }
 }
 
-.logo{
-    display:flex;
-    align-items:center;
-    gap:15px;
-    text-decoration:none;
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
 
-    img{
-        width:100px;
-        height:100px;
-        object-fit:cover;
-        transition:.3s;
-        animation:flotar 3s ease-in-out infinite;
+    text-decoration: none;
 
-        &:hover{
-            transform:scale(1.08);
-            filter:drop-shadow(0 0 15px rgba(221,210,151,0.8));
+    img {
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+
+        transition: all .3s ease;
+        animation: flotar 3s ease-in-out infinite;
+
+        &:hover {
+            transform: scale(1.08);
+            filter: drop-shadow(0 0 15px rgba(221, 210, 151, .8));
         }
     }
 }
