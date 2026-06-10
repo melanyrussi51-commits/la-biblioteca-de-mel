@@ -296,7 +296,8 @@ Leer más
     Ya conociste algunos de mis libros favoritos.  
     Ahora me encantaría saber cuál historia te marcó a vos.
   </p>
- <form class="form-lectores"  action="https://formspree.io/f/xkoagolo" method="POST">
+ <form 
+  id="form-lectores" class="form-lectores" action="https://formspree.io/f/xkoagolo" method="POST">
   <input type="hidden" name="form-name" value="entre-lectores">
   <input 
     type="text" 
@@ -364,5 +365,29 @@ function cerrarResena(){
 }
 </script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+const formLectores = document.getElementById("form-lectores");
+
+formLectores.addEventListener("submit", async function(e){
+  e.preventDefault();
+
+  const datos = new FormData(formLectores);
+
+  const respuesta = await fetch(formLectores.action, {
+    method: "POST",
+    body: datos,
+    headers: {
+      "Accept": "application/json"
+    }
+  });
+
+  if (respuesta.ok) {
+    alert("✨ Tu mensaje fue enviado. ¡Gracias por compartir tu lectura!");
+    formLectores.reset();
+  } else {
+    alert("No se pudo enviar el mensaje. Probá de nuevo.");
+  }
+});
+</script>
 </body>
 </html>
