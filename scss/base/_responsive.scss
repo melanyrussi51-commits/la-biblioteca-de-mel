@@ -194,6 +194,14 @@
     width:110px;
     height:165px;
   }
+   .item img:hover{
+    transform:none;
+  }  
+  .item.seleccionado img{
+    transform:none;
+  }
+}
+
 
   .descripcion-libro{
     flex-basis:100%;
@@ -322,7 +330,7 @@
     align-items:center;
     text-align:center;
   }
-}
+
 
 @media (max-width:576px){
 
@@ -562,4 +570,11 @@
   .destacados-mes .carousel-control-next{
     right:3px;
   }
+}
+@media (prefers-reduced-motion: reduce){
+    *{
+        animation:none !important;
+        transition:none !important;
+        scroll-behavior:auto !important;
+    }
 }
