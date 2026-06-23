@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="author" content="Melany Russi">
-    <meta name="description" content="Explora mi colección de libros leídos, favoritos y recomendaciones literarias.">
-    <meta name="keywords" content="libros, reseñas, lectura, fantasía, Harry Potter, Percy Jackson, literatura">
+    <meta name="description" content="Explora mi colección de libros leídos, favoritos y recomendaciones literarias dentro de La Biblioteca de Mel.">
+    <meta name="keywords" content="biblioteca, libros, reseñas, lectura, fantasía, Harry Potter, Percy Jackson, literatura">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Biblioteca | La Biblioteca de Mel</title>
@@ -20,25 +20,25 @@
 
 <body>
     <header class="header">
-        <a href="../index.html" class="logo">
-            <img src="../assents/logo7.png" alt="Logo de La Biblioteca de Mel">
+        <a href="../index.html" class="logo" aria-label="Ir al inicio de La Biblioteca de Mel">
+            <img src="../assents/logo7.png" alt="Logo de La Biblioteca de Mel" width="100" height="100">
             <h1>La Biblioteca de Mel</h1>
         </a>
 
-        <nav class="menu">
+        <nav class="menu" aria-label="Navegación principal">
             <ul>
                 <li><a href="../index.html">Inicio</a></li>
                 <li><a href="./reseñas.html">Reseñas</a></li>
                 <li><a href="./sobremi.html">Sobre mí</a></li>
                 <li><a href="./lecturaspendientes.html">Lecturas pendientes</a></li>
-                <li><a href="./biblioteca.html">Biblioteca</a></li>
+                <li><a href="./biblioteca.html" aria-current="page">Biblioteca</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section class="biblioteca">
-            <h2 class="titulo-biblioteca">Mi biblioteca</h2>
+        <section class="biblioteca" aria-labelledby="titulo-biblioteca">
+            <h2 id="titulo-biblioteca" class="titulo-biblioteca">Mi biblioteca</h2>
 
             <p class="intro-biblioteca">
                 Mundos, personajes y aventuras que ya forman parte de mis estanterías.
@@ -52,8 +52,8 @@
                 ✍️ = Tiene reseña disponible
             </p>
 
-            <section class="genero-biblioteca">
-                <h3>✨ Fantasía</h3>
+            <section class="genero-biblioteca" aria-labelledby="fantasia">
+                <h3 id="fantasia">✨ Fantasía</h3>
 
                 <p class="descripcion-genero">
                     Mundos mágicos, criaturas fantásticas y aventuras imposibles.
@@ -61,141 +61,141 @@
 
                 <div class="biblioteca-grid">
                     <div class="libro-biblioteca tiene-resena">
-                        <a href="./reseñas.html#resena-harry">
-                            <img src="../assents/2 (4) (1).jpg" alt="Portada del libro Harry Potter de J.K. Rowling" loading="lazy">
+                        <a href="./reseñas.html#resena-harry" aria-label="Leer reseña de Harry Potter">
+                            <img src="../assents/2 (4) (1).jpg" alt="Portada del libro Harry Potter de J. K. Rowling" loading="lazy" decoding="async">
                         </a>
                         <h4>Harry Potter</h4>
-                        <p>J.K. Rowling</p>
+                        <p>J. K. Rowling</p>
                     </div>
 
                     <div class="libro-biblioteca tiene-resena">
-                        <a href="./reseñas.html#resena-percy">
-                            <img src="../assents/3 (3) (1).jpg" alt="Portada del libro Percy Jackson de Rick Riordan" loading="lazy" data-bs-toggle="tooltip" title="⭐ Mi saga favorita ⭐">
+                        <a href="./reseñas.html#resena-percy" aria-label="Leer reseña de Percy Jackson">
+                            <img src="../assents/3 (3) (1).jpg" alt="Portada del libro Percy Jackson de Rick Riordan" loading="lazy" decoding="async" data-bs-toggle="tooltip" title="⭐ Mi saga favorita ⭐">
                         </a>
                         <h4>Percy Jackson</h4>
                         <p>Rick Riordan</p>
                     </div>
 
                     <div class="libro-biblioteca tiene-resena">
-                        <a href="./reseñas.html#resena-lotr">
-                            <img src="../assents/5 (1).jpg" alt="Portada del libro El señor de los anillos de J.R.R. Tolkien" loading="lazy">
+                        <a href="./reseñas.html#resena-lotr" aria-label="Leer reseña de El señor de los anillos">
+                            <img src="../assents/5 (1).jpg" alt="Portada del libro El señor de los anillos de J. R. R. Tolkien" loading="lazy" decoding="async">
                         </a>
                         <h4>El señor de los anillos</h4>
-                        <p>J.R.R. Tolkien</p>
+                        <p>J. R. R. Tolkien</p>
                     </div>
 
                     <div class="libro-biblioteca tiene-resena">
-                        <a href="./reseñas.html#resena-heroes">
-                            <img src="../assents/4 (1).jpg" alt="Portada del libro Héroes del Olimpo de Rick Riordan" loading="lazy">
+                        <a href="./reseñas.html#resena-heroes" aria-label="Leer reseña de Héroes del Olimpo">
+                            <img src="../assents/4 (1).jpg" alt="Portada del libro Héroes del Olimpo de Rick Riordan" loading="lazy" decoding="async">
                         </a>
                         <h4>Héroes del Olimpo</h4>
                         <p>Rick Riordan</p>
                     </div>
 
                     <div class="libro-biblioteca tiene-resena">
-                        <a href="./reseñas.html#resena-cazadores">
-                            <img src="../assents/6 (1).jpg" alt="Portada del libro Ciudad de hueso de Cassandra Clare" loading="lazy">
+                        <a href="./reseñas.html#resena-cazadores" aria-label="Leer reseña de Ciudad de hueso">
+                            <img src="../assents/6 (1).jpg" alt="Portada del libro Ciudad de hueso de Cassandra Clare" loading="lazy" decoding="async">
                         </a>
                         <h4>Ciudad de hueso</h4>
                         <p>Cassandra Clare</p>
                     </div>
 
                     <div class="libro-biblioteca">
-                        <img src="../assents/biblio1.jpg" alt="Portada del libro Las pruebas de Apolo de Rick Riordan" loading="lazy">
+                        <img src="../assents/biblio1.jpg" alt="Portada del libro Las pruebas de Apolo de Rick Riordan" loading="lazy" decoding="async">
                         <h4>Las pruebas de Apolo</h4>
                         <p>Rick Riordan</p>
                     </div>
 
                     <div class="libro-biblioteca">
-                        <img src="../assents/biblio2.jpg" alt="Portada del libro Magnus Chase de Rick Riordan" loading="lazy">
+                        <img src="../assents/biblio2.jpg" alt="Portada del libro Magnus Chase de Rick Riordan" loading="lazy" decoding="async">
                         <h4>Magnus Chase</h4>
                         <p>Rick Riordan</p>
                     </div>
 
                     <div class="libro-biblioteca tiene-resena">
-                        <a href="./reseñas.html#resena-angel">
-                            <img src="../assents/biblio3.webp" alt="Portada del libro Ángel mecánico de Cassandra Clare" loading="lazy">
+                        <a href="./reseñas.html#resena-angel" aria-label="Leer reseña de Ángel mecánico">
+                            <img src="../assents/biblio3.webp" alt="Portada del libro Ángel mecánico de Cassandra Clare" loading="lazy" decoding="async">
                         </a>
                         <h4>Ángel mecánico</h4>
                         <p>Cassandra Clare</p>
                     </div>
 
                     <div class="libro-biblioteca">
-                        <img src="../assents/biblio4.jpg" alt="Portada del libro Lady Midnight de Cassandra Clare" loading="lazy">
+                        <img src="../assents/biblio4.jpg" alt="Portada del libro Lady Midnight de Cassandra Clare" loading="lazy" decoding="async">
                         <h4>Lady Midnight</h4>
                         <p>Cassandra Clare</p>
                     </div>
 
                     <div class="libro-biblioteca">
-                        <img src="../assents/biblio5.webp" alt="Portada del libro Furyborn de Claire Legrand" loading="lazy">
+                        <img src="../assents/biblio5.webp" alt="Portada del libro Furyborn de Claire Legrand" loading="lazy" decoding="async">
                         <h4>Furyborn</h4>
                         <p>Claire Legrand</p>
                     </div>
 
                     <div class="libro-biblioteca">
-                        <img src="../assents/biblio6.jpg" alt="Portada del libro Oscuros de Lauren Kate" loading="lazy">
+                        <img src="../assents/biblio6.jpg" alt="Portada del libro Oscuros de Lauren Kate" loading="lazy" decoding="async">
                         <h4>Oscuros</h4>
                         <p>Lauren Kate</p>
                     </div>
 
                     <div class="libro-biblioteca">
-                        <img src="../assents/biblio7.jpg" alt="Portada del libro Ciudad medialuna de Sarah J. Maas" loading="lazy">
+                        <img src="../assents/biblio7.jpg" alt="Portada del libro Ciudad medialuna de Sarah J. Maas" loading="lazy" decoding="async">
                         <h4>Ciudad medialuna</h4>
                         <p>Sarah J. Maas</p>
                     </div>
 
                     <div class="libro-biblioteca">
-                        <img src="../assents/biblio8.webp" alt="Portada del libro Matar un reino de Alexandra Christo" loading="lazy">
+                        <img src="../assents/biblio8.webp" alt="Portada del libro Matar un reino de Alexandra Christo" loading="lazy" decoding="async">
                         <h4>Matar un reino</h4>
                         <p>Alexandra Christo</p>
                     </div>
 
                     <div class="libro-biblioteca">
-                        <img src="../assents/biblio9.jpg" alt="Portada del libro Magos y semidioses de Rick Riordan" loading="lazy">
+                        <img src="../assents/biblio9.jpg" alt="Portada del libro Magos y semidioses de Rick Riordan" loading="lazy" decoding="async">
                         <h4>Magos y semidioses</h4>
                         <p>Rick Riordan</p>
                     </div>
                 </div>
             </section>
 
-            <section class="genero-biblioteca">
-                <h3>⚔️ Aventura y ciencia ficción</h3>
+            <section class="genero-biblioteca" aria-labelledby="aventura-ciencia-ficcion">
+                <h3 id="aventura-ciencia-ficcion">⚔️ Aventura y ciencia ficción</h3>
 
                 <p class="descripcion-genero">
                     Viajes, supervivencia y desafíos que cambian destinos.
                 </p>
 
                 <div class="biblioteca-grid">
-                    <div class="libro-biblioteca tiene-resena" id="resena-maze">
-                        <a href="./reseñas.html#resena-maze">
-                            <img src="../assents/biblio10.webp" alt="Portada del libro Maze Runner de James Dashner" loading="lazy">
+                    <div class="libro-biblioteca tiene-resena">
+                        <a href="./reseñas.html#resena-maze" aria-label="Leer reseña de Maze Runner">
+                            <img src="../assents/biblio10.webp" alt="Portada del libro Maze Runner de James Dashner" loading="lazy" decoding="async">
                         </a>
                         <h4>Maze Runner</h4>
                         <p>James Dashner</p>
                     </div>
 
                     <div class="libro-biblioteca">
-                        <img src="../assents/biblio11.webp" alt="Portada del libro Los 100 de Kass Morgan" loading="lazy">
+                        <img src="../assents/biblio11.webp" alt="Portada del libro Los 100 de Kass Morgan" loading="lazy" decoding="async">
                         <h4>Los 100</h4>
                         <p>Kass Morgan</p>
                     </div>
 
                     <div class="libro-biblioteca">
-                        <img src="../assents/biblio12.webp" alt="Portada del libro Resident Evil de S.D. Perry" loading="lazy">
+                        <img src="../assents/biblio12.webp" alt="Portada del libro Resident Evil de S. D. Perry" loading="lazy" decoding="async">
                         <h4>Resident Evil</h4>
-                        <p>S.D. Perry</p>
+                        <p>S. D. Perry</p>
                     </div>
 
                     <div class="libro-biblioteca">
-                        <img src="../assents/biblio13.jpg" alt="Portada del libro La llave de Blake de Andrés Belenguer Sandra" loading="lazy">
+                        <img src="../assents/biblio13.jpg" alt="Portada del libro La llave de Blake de Andrés Belenguer" loading="lazy" decoding="async">
                         <h4>La llave de Blake</h4>
-                        <p>Andrés Belenguer Sandra</p>
+                        <p>Andrés Belenguer</p>
                     </div>
                 </div>
             </section>
 
-            <section class="genero-biblioteca">
-                <h3>👻 Terror y suspenso</h3>
+            <section class="genero-biblioteca" aria-labelledby="terror-suspenso">
+                <h3 id="terror-suspenso">👻 Terror y suspenso</h3>
 
                 <p class="descripcion-genero">
                     Secretos, investigaciones y giros inesperados.
@@ -203,40 +203,40 @@
 
                 <div class="biblioteca-grid">
                     <div class="libro-biblioteca">
-                        <img src="../assents/biblio14.webp" alt="Portada del libro La chica invisible de Blue Jeans" loading="lazy">
+                        <img src="../assents/biblio14.webp" alt="Portada del libro La chica invisible de Blue Jeans" loading="lazy" decoding="async">
                         <h4>La chica invisible</h4>
                         <p>Blue Jeans</p>
                     </div>
 
-                    <div class="libro-biblioteca tiene-resena" id="resena-it">
-                        <a href="./reseñas.html#resena-it">
-                            <img src="../assents/biblio15.webp" alt="Portada del libro It de Stephen King" loading="lazy">
+                    <div class="libro-biblioteca tiene-resena">
+                        <a href="./reseñas.html#resena-it" aria-label="Leer reseña de It">
+                            <img src="../assents/biblio15.webp" alt="Portada del libro It de Stephen King" loading="lazy" decoding="async">
                         </a>
                         <h4>It</h4>
                         <p>Stephen King</p>
                     </div>
 
                     <div class="libro-biblioteca">
-                        <img src="../assents/biblio16.webp" alt="Portada del libro Misery de Stephen King" loading="lazy">
+                        <img src="../assents/biblio16.webp" alt="Portada del libro Misery de Stephen King" loading="lazy" decoding="async">
                         <h4>Misery</h4>
                         <p>Stephen King</p>
                     </div>
 
                     <div class="libro-biblioteca">
-                        <img src="../assents/biblio17.jpg" alt="Portada del libro El instituto de Stephen King" loading="lazy">
+                        <img src="../assents/biblio17.jpg" alt="Portada del libro El instituto de Stephen King" loading="lazy" decoding="async">
                         <h4>El instituto</h4>
                         <p>Stephen King</p>
                     </div>
 
                     <div class="libro-biblioteca">
-                        <img src="../assents/biblio18.webp" alt="Portada del libro Cementerio de animales de Stephen King" loading="lazy">
+                        <img src="../assents/biblio18.webp" alt="Portada del libro Cementerio de animales de Stephen King" loading="lazy" decoding="async">
                         <h4>Cementerio de animales</h4>
                         <p>Stephen King</p>
                     </div>
 
-                    <div class="libro-biblioteca tiene-resena" id="resena-amigo">
-                        <a href="./reseñas.html#resena-amigo">
-                            <img src="../assents/biblio19.jpg" alt="Portada del libro Amigo imaginario de Stephen Chbosky" loading="lazy">
+                    <div class="libro-biblioteca tiene-resena">
+                        <a href="./reseñas.html#resena-amigo" aria-label="Leer reseña de Amigo imaginario">
+                            <img src="../assents/biblio19.jpg" alt="Portada del libro Amigo imaginario de Stephen Chbosky" loading="lazy" decoding="async">
                         </a>
                         <h4>Amigo imaginario</h4>
                         <p>Stephen Chbosky</p>
@@ -244,92 +244,92 @@
                 </div>
             </section>
 
-            <section class="genero-biblioteca">
-                <h3>❤️ Romance y juvenil</h3>
+            <section class="genero-biblioteca" aria-labelledby="romance-juvenil">
+                <h3 id="romance-juvenil">❤️ Romance y juvenil</h3>
 
                 <p class="descripcion-genero">
                     Historias sobre amor, amistad y crecimiento personal.
                 </p>
 
                 <div class="biblioteca-grid">
-                    <div class="libro-biblioteca tiene-resena" id="resena-dosmetros">
-                        <a href="./reseñas.html#resena-dosmetros">
-                            <img src="../assents/biblio20.webp" alt="Portada del libro A dos metros de ti de Rachael Lippincott" loading="lazy">
+                    <div class="libro-biblioteca tiene-resena">
+                        <a href="./reseñas.html#resena-dosmetros" aria-label="Leer reseña de A dos metros de ti">
+                            <img src="../assents/biblio20.webp" alt="Portada del libro A dos metros de ti de Rachael Lippincott" loading="lazy" decoding="async">
                         </a>
                         <h4>A dos metros de ti</h4>
                         <p>Rachael Lippincott</p>
                     </div>
 
                     <div class="libro-biblioteca">
-                        <img src="../assents/biblio21.jpg" alt="Portada del libro Bajo la misma estrella de John Green" loading="lazy">
+                        <img src="../assents/biblio21.jpg" alt="Portada del libro Bajo la misma estrella de John Green" loading="lazy" decoding="async">
                         <h4>Bajo la misma estrella</h4>
                         <p>John Green</p>
                     </div>
 
                     <div class="libro-biblioteca">
-                        <img src="../assents/biblio22.webp" alt="Portada del libro Todo, todo de Nicola Yoon" loading="lazy">
+                        <img src="../assents/biblio22.webp" alt="Portada del libro Todo, todo de Nicola Yoon" loading="lazy" decoding="async">
                         <h4>Todo, todo</h4>
                         <p>Nicola Yoon</p>
                     </div>
 
                     <div class="libro-biblioteca">
-                        <img src="../assents/biblio23.jpg" alt="Portada del libro Fangirl de Rainbow Rowell" loading="lazy">
+                        <img src="../assents/biblio23.jpg" alt="Portada del libro Fangirl de Rainbow Rowell" loading="lazy" decoding="async">
                         <h4>Fangirl</h4>
                         <p>Rainbow Rowell</p>
                     </div>
 
-                    <div class="libro-biblioteca tiene-resena" id="resena-violet">
-                        <a href="./reseñas.html#resena-violet">
-                            <img src="../assents/biblio24.webp" alt="Portada del libro Violet y Finch de Jennifer Niven" loading="lazy">
+                    <div class="libro-biblioteca tiene-resena">
+                        <a href="./reseñas.html#resena-violet" aria-label="Leer reseña de Violet y Finch">
+                            <img src="../assents/biblio24.webp" alt="Portada del libro Violet y Finch de Jennifer Niven" loading="lazy" decoding="async">
                         </a>
                         <h4>Violet y Finch</h4>
                         <p>Jennifer Niven</p>
                     </div>
 
                     <div class="libro-biblioteca">
-                        <img src="../assents/biblio25.jpg" alt="Portada del libro Llámame por tu nombre de André Aciman" loading="lazy">
+                        <img src="../assents/biblio25.jpg" alt="Portada del libro Llámame por tu nombre de André Aciman" loading="lazy" decoding="async">
                         <h4>Llámame por tu nombre</h4>
                         <p>André Aciman</p>
                     </div>
 
                     <div class="libro-biblioteca">
-                        <img src="../assents/biblio26.jpg" alt="Portada del libro La Selección de Kiera Cass" loading="lazy">
-                        <h4>La Selección</h4>
+                        <img src="../assents/biblio26.jpg" alt="Portada del libro La selección de Kiera Cass" loading="lazy" decoding="async">
+                        <h4>La selección</h4>
                         <p>Kiera Cass</p>
                     </div>
                 </div>
             </section>
 
-            <section class="genero-biblioteca">
-                <h3>💭 Clásicos y reflexivos</h3>
+            <section class="genero-biblioteca" aria-labelledby="clasicos-reflexivos">
+                <h3 id="clasicos-reflexivos">💭 Clásicos y reflexivos</h3>
 
                 <p class="descripcion-genero">
                     Libros que dejan enseñanzas y acompañan durante años.
                 </p>
 
                 <div class="biblioteca-grid">
-                    <div class="libro-biblioteca tiene-resena" id="resena-principito">
-                        <a href="./reseñas.html#resena-principito">
-                            <img src="../assents/biblio27.webp" alt="Portada del libro El Principito de Antoine de Saint-Exupéry" loading="lazy">
+                    <div class="libro-biblioteca tiene-resena">
+                        <a href="./reseñas.html#resena-principito" aria-label="Leer reseña de El Principito">
+                            <img src="../assents/biblio27.webp" alt="Portada del libro El Principito de Antoine de Saint-Exupéry" loading="lazy" decoding="async">
                         </a>
                         <h4>El Principito</h4>
                         <p>Antoine de Saint-Exupéry</p>
                     </div>
 
                     <div class="libro-biblioteca">
-                        <img src="../assents/biblio28.jpg" alt="Portada del libro Platero y yo de Juan Ramón Jiménez" loading="lazy">
+                        <img src="../assents/biblio28.jpg" alt="Portada del libro Platero y yo de Juan Ramón Jiménez" loading="lazy" decoding="async">
                         <h4>Platero y yo</h4>
                         <p>Juan Ramón Jiménez</p>
                     </div>
 
                     <div class="libro-biblioteca">
-                        <img src="../assents/biblio29.jpg" alt="Portada del libro Orgullo y prejuicio de Jane Austen" loading="lazy">
+                        <img src="../assents/biblio29.jpg" alt="Portada del libro Orgullo y prejuicio de Jane Austen" loading="lazy" decoding="async">
                         <h4>Orgullo y prejuicio</h4>
                         <p>Jane Austen</p>
                     </div>
 
                     <div class="libro-biblioteca">
-                        <img src="../assents/biblio30.webp" alt="Portada del libro El diario de Ana Frank" loading="lazy">
+                        <img src="../assents/biblio30.webp" alt="Portada del libro El diario de Ana Frank" loading="lazy" decoding="async">
                         <h4>El diario de Ana Frank</h4>
                         <p>Ana Frank</p>
                     </div>
@@ -341,24 +341,22 @@
     <footer class="footer">
         <div class="footer-contenido">
             <div class="footer-logo">
-                <img src="../assents/logo7.png" alt="Logo de La Biblioteca de Mel">
-                <p>
-                    Donde cada libro abre la puerta a otro mundo.
-                </p>
+                <img src="../assents/logo7.png" alt="Logo de La Biblioteca de Mel" width="100" height="100">
+                <p>Donde cada libro abre la puerta a otro mundo.</p>
             </div>
 
             <div class="footer-redes">
                 <div class="iconos">
-                    <a href="#" aria-label="Goodreads">
-                        <i class="fa-brands fa-goodreads"></i>
+                    <a href="#" aria-label="Ir a Goodreads">
+                        <i class="fa-brands fa-goodreads" aria-hidden="true"></i>
                     </a>
 
-                    <a href="#" aria-label="TikTok">
-                        <i class="fa-brands fa-tiktok"></i>
+                    <a href="#" aria-label="Ir a TikTok">
+                        <i class="fa-brands fa-tiktok" aria-hidden="true"></i>
                     </a>
 
-                    <a href="#" aria-label="Pinterest">
-                        <i class="fa-brands fa-pinterest"></i>
+                    <a href="#" aria-label="Ir a Pinterest">
+                        <i class="fa-brands fa-pinterest" aria-hidden="true"></i>
                     </a>
                 </div>
             </div>
@@ -374,8 +372,8 @@
     <script>
         const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
 
-        const tooltipList = [...tooltipTriggerList].map((tooltipTriggerEl) => {
-            return new bootstrap.Tooltip(tooltipTriggerEl);
+        [...tooltipTriggerList].forEach(tooltipTriggerEl => {
+            new bootstrap.Tooltip(tooltipTriggerEl);
         });
     </script>
 </body>

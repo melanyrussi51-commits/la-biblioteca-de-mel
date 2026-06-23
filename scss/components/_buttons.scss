@@ -5,16 +5,17 @@
     margin-top: 20px;
     padding: 12px 25px;
 
-    background: variables.$color-principal;
     color: variables.$color-fondo;
-
     text-decoration: none;
     font-weight: 700;
+
+    background: variables.$color-principal;
     border-radius: 10px;
+
     transition: all .3s ease;
 
     &:hover {
-        background: #f5e6b3;
+        background: variables.$color-hover;
         transform: translateY(-2px);
         box-shadow: 0 0 15px rgba(221, 210, 151, .4);
     }
@@ -25,8 +26,9 @@
     margin-top: 15px;
     padding: 8px 18px;
 
+    color: variables.$color-fondo;
+    text-decoration: none;
     font-size: .9rem;
-    border-radius: 20px;
 
     background: linear-gradient(
         135deg,
@@ -34,12 +36,11 @@
         variables.$color-texto
     );
 
-    color: variables.$color-fondo;
-    text-decoration: none;
-
+    border-radius: 20px;
     transition: all .3s ease;
 
     &:hover {
+        color: variables.$color-fondo;
         transform: translateY(-3px);
         box-shadow:
             0 0 15px rgba(221, 210, 151, .6),
@@ -52,16 +53,16 @@
     margin-top: 10px;
     padding: 6px 14px;
 
+    color: variables.$color-principal;
+    text-decoration: none;
+    font-size: .8rem;
+    font-weight: 600;
+
     background: rgba(221, 210, 151, .08);
     border: 1px solid rgba(221, 210, 151, .35);
     border-radius: 20px;
 
-    color: variables.$color-principal;
-    text-decoration: none;
-
-    font-size: .8rem;
-    font-weight: 600;
-
+    cursor: pointer;
     transition: all .3s ease;
 
     &:hover {
@@ -75,6 +76,7 @@
     opacity: 0;
     visibility: hidden;
     transform: translateY(5px);
+
     transition: all .3s ease;
 }
 
@@ -84,22 +86,24 @@
     transform: translateY(0);
 }
 
-.form-lectores button {
-    align-self: center;
-    padding: 9px 20px;
+.form-lectores {
+    button {
+        align-self: center;
+        padding: 9px 20px;
 
-    border: none;
-    border-radius: 25px;
+        color: variables.$color-fondo;
 
-    background: variables.$color-principal;
-    color: variables.$color-fondo;
+        background: variables.$color-principal;
+        border: none;
+        border-radius: 25px;
 
-    cursor: pointer;
-    transition: all .3s ease;
+        cursor: pointer;
+        transition: all .3s ease;
 
-    &:hover {
-        transform: translateY(-3px);
-        box-shadow: 0 0 15px rgba(232, 217, 143, .4);
+        &:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 0 15px rgba(232, 217, 143, .4);
+        }
     }
 }
 
@@ -108,7 +112,10 @@
     margin-top: 12px;
     padding: 8px 18px;
 
-    border-radius: 20px;
+    color: variables.$color-fondo;
+    text-decoration: none;
+    font-size: .9rem;
+    font-weight: 600;
 
     background: linear-gradient(
         135deg,
@@ -116,12 +123,7 @@
         variables.$color-texto
     );
 
-    color: variables.$color-fondo;
-    text-decoration: none;
-
-    font-size: .9rem;
-    font-weight: 600;
-
+    border-radius: 20px;
     transition: all .3s ease;
 
     &:hover {

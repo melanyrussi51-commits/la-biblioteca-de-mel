@@ -46,10 +46,10 @@
         max-width: none;
 
         border: 2px solid rgba(221, 210, 151, .4);
-        border-radius: 20px;
+        border-radius: variables.$radio-card;
 
         box-shadow:
-            0 0 15px rgba(221, 210, 151, .25),
+            variables.$sombra-suave,
             0 0 30px rgba(183, 156, 237, .15);
     }
 

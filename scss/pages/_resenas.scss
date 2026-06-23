@@ -64,10 +64,10 @@
     span {
         padding: 3px 7px;
 
-        border-radius: 20px;
-
         color: variables.$color-texto;
         font-size: .7rem;
+
+        border-radius: 20px;
 
         &:nth-child(odd) {
             background: rgba(232, 217, 143, .18);
@@ -115,7 +115,6 @@
         border-radius: 50%;
 
         font-size: .9rem;
-
         box-shadow: 0 0 10px rgba(221, 210, 151, .25);
     }
 }
@@ -153,7 +152,7 @@
     );
 
     border: 1px solid rgba(221, 210, 151, .4);
-    border-radius: 20px;
+    border-radius: variables.$radio-card;
 }
 
 .cerrar-resena {
@@ -164,12 +163,11 @@
     width: 32px;
     height: 32px;
 
-    background: rgba(221, 210, 151, .12);
+    color: variables.$color-principal;
 
+    background: rgba(221, 210, 151, .12);
     border: none;
     border-radius: 50%;
-
-    color: variables.$color-principal;
 
     cursor: pointer;
     transition: all .3s ease;

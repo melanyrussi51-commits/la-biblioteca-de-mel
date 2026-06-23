@@ -17,62 +17,53 @@
     }
 
     img {
-        cursor: pointer;
         width: 130px;
         height: 195px;
         object-fit: cover;
-        border-radius: 12px;
+
         border: 2px solid rgba(221, 210, 151, .6);
+        border-radius: 12px;
+
+        cursor: pointer;
         box-shadow:
             0 6px 18px rgba(0, 0, 0, .45),
             0 0 12px rgba(221, 210, 151, .25);
+
         transition: all .3s ease;
     }
 
     h3 {
-        font-size: 1.05rem;
         margin-top: 12px;
         margin-bottom: 4px;
+
+        font-size: 1.05rem;
     }
 
     p {
+        margin: 0;
+
         font-size: .9rem;
         opacity: .85;
-        margin: 0;
-    }
-}
-
-.titulo-pendientes {
-    font-family: variables.$fuente-titulos;
-    font-size: 3.3rem;
-    color: variables.$color-principal;
-    text-align: center;
-    animation: destello 2.5s ease-in-out infinite;
-}
-
-@keyframes destello {
-    0%,
-    100% {
-        letter-spacing: 0;
-    }
-
-    50% {
-        letter-spacing: 2px;
     }
 }
 
 .libro-biblioteca {
-    width: 130px;
-    text-align: center;
     position: relative;
+
+    width: 130px;
+
+    text-align: center;
 
     img {
         width: 130px;
         height: 195px;
         object-fit: cover;
-        border-radius: 12px;
-        border: 2px solid rgba(221, 210, 151, .5);
+
         margin-bottom: 12px;
+
+        border: 2px solid rgba(221, 210, 151, .5);
+        border-radius: 12px;
+
         transition: all .3s ease;
 
         &:hover {
@@ -111,9 +102,11 @@
         width: 115px;
         height: 170px;
         object-fit: cover;
-        border-radius: 12px;
-        border: 2px solid rgba(221, 210, 151, .5);
+
         margin-bottom: 12px;
+
+        border: 2px solid rgba(221, 210, 151, .5);
+        border-radius: 12px;
     }
 
     h3 {
@@ -136,14 +129,15 @@
     gap: 25px;
 
     padding: 25px;
-    border-radius: 25px;
-    border-left: 4px solid variables.$color-principal;
 
     background: linear-gradient(
         135deg,
         rgba(232, 217, 143, .12),
         rgba(62, 50, 110, .35)
     );
+
+    border-left: 4px solid variables.$color-principal;
+    border-radius: 25px;
 
     box-shadow: 0 0 18px rgba(232, 217, 143, .12);
 }

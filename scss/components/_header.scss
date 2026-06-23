@@ -22,7 +22,7 @@
         animation: aparecer 1s ease;
 
         &:hover {
-            color: #f5e6b3;
+            color: variables.$color-hover;
             transform: scale(1.03);
         }
     }
@@ -45,9 +45,8 @@
         position: relative;
 
         color: variables.$color-principal;
-        text-decoration: none;
-
         font-size: 18px;
+        text-decoration: none;
 
         transition: all .3s ease;
 
@@ -64,8 +63,9 @@
             transition: all .3s ease;
         }
 
-        &:hover {
-            color: #f5e6b3;
+        &:hover,
+        &[aria-current="page"] {
+            color: variables.$color-hover;
 
             &::after {
                 width: 100%;

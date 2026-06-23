@@ -1,7 +1,8 @@
 @use "../base/variables";
 
-@mixin tarjeta-magica{
-    border-radius:20px;
-    border:1px solid rgba(232,217,143,0.3);
-    box-shadow:0 0 15px rgba(232,217,143,0.12);
+@mixin tarjeta-magica {
+    border: 1px solid rgba(232, 217, 143, .3);
+    border-radius: variables.$radio-card;
+
+    box-shadow: variables.$sombra-suave;
 }

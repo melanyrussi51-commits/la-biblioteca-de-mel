@@ -1,7 +1,8 @@
 @use "../base/variables";
 
-%panel-magico{
-    border-radius:20px;
-    border:1px solid rgba(221,210,151,0.35);
-    box-shadow:0 0 15px rgba(221,210,151,0.15);
+%panel-magico {
+    border: 1px solid rgba(221, 210, 151, .35);
+    border-radius: variables.$radio-card;
+
+    box-shadow: variables.$sombra-suave;
 }

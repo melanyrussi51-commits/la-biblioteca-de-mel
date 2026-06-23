@@ -1,7 +1,5 @@
 
-/* ========================= */
 /* RESPONSIVE GENERAL */
-/* ========================= */
 
 body {
     overflow-x: hidden;
@@ -21,52 +19,7 @@ main {
     box-sizing: border-box;
 }
 
-
-/* ========================= */
-/* TABLETS Y LAPTOPS CHICAS */
-/* ========================= */
-
-@media (max-width: 1024px) {
-
-    .header {
-        padding: 20px 25px;
-        flex-direction: column;
-        gap: 15px;
-        text-align: center;
-    }
-
-    .menu {
-        margin-left: 0;
-        width: 100%;
-    }
-
-    .menu ul {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 15px;
-    }
-
-    .hero {
-        height: 55vh;
-        padding-left: 0;
-        margin: 15px auto;
-        background-position: center top;
-    }
-
-    .pendientes-grid,
-    .biblioteca-grid {
-        justify-content: center;
-    }
-
-    .timeline-contenedor {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-
-/* ========================= */
-/* DESTACADOS DEL MES */
-/* ========================= */
+/* DESTACADOS DEL MES BASE */
 
 .destacados-mes {
     width: 85%;
@@ -112,7 +65,7 @@ main {
 }
 
 .destacado-slide p {
-    font-size: 0.88rem;
+    font-size: .88rem;
     line-height: 1.5;
 }
 
@@ -133,7 +86,7 @@ main {
 
 .destacado-cita p {
     margin-top: 12px;
-    font-size: 0.85rem;
+    font-size: .85rem;
 }
 
 .destacados-mes .carousel-control-prev,
@@ -152,46 +105,82 @@ main {
     right: 8px;
 }
 
+/* TABLETS Y LAPTOPS CHICAS */
 
-/* ========================= */
-/* SOBRE MÍ Y TIMELINE DESKTOP/TABLET */
-/* ========================= */
+@media (max-width: 1024px) {
 
-@media (min-width: 769px) {
-
-    .sobre-contenido {
-        display: flex !important;
-        flex-direction: row !important;
-        flex-wrap: nowrap !important;
-        align-items: center !important;
-        justify-content: center !important;
-        gap: 40px !important;
+    .header {
+        padding: 20px 25px;
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
     }
 
-    .sobre-imagen img {
-        width: 430px !important;
-        max-width: none !important;
+    .menu {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .menu ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .hero {
+        height: 55vh;
+        padding-left: 0;
+        margin: 15px auto;
+        background-position: center top;
+    }
+
+    .pendientes-grid,
+    .biblioteca-grid {
+        justify-content: center;
     }
 
     .timeline-contenedor {
-        display: grid !important;
-        grid-template-columns: repeat(3, 1fr) !important;
-        gap: 18px !important;
-        max-width: 880px !important;
-        width: 100% !important;
-        margin: 25px auto !important;
-    }
-
-    .timeline-contenedor .evento {
-        width: auto !important;
-        max-width: none !important;
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
 
-/* ========================= */
+/* SOBRE MÍ Y TIMELINE DESKTOP/TABLET */
+
+
+@media (min-width: 769px) {
+
+    .sobre-contenido {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+    }
+
+    .sobre-imagen img {
+        width: 430px;
+        max-width: none;
+    }
+
+    .timeline-contenedor {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 18px;
+        max-width: 880px;
+        width: 100%;
+        margin: 25px auto;
+    }
+
+    .timeline-contenedor .evento {
+        width: auto;
+        max-width: none;
+    }
+}
+
 /* FAVORITOS EN TABLET / IPAD */
-/* ========================= */
+
 
 @media (min-width: 769px) and (max-width: 1199px) {
 
@@ -237,10 +226,8 @@ main {
     }
 }
 
-
-/* ========================= */
 /* IPAD MINI */
-/* ========================= */
+
 
 @media (min-width: 700px) and (max-width: 820px) {
 
@@ -250,33 +237,38 @@ main {
     }
 
     .galeria {
-        display: grid !important;
-        grid-template-columns: repeat(4, 1fr) !important;
-        justify-items: center !important;
-        align-items: start !important;
-        gap: 18px !important;
-        width: 100% !important;
-        max-width: 700px !important;
-        margin: 30px auto 0 !important;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        justify-items: center;
+        align-items: start;
+        gap: 18px;
+        width: 100%;
+        max-width: 700px;
+        margin: 30px auto 0;
     }
 
     .item {
-        width: 125px !important;
-        margin: 0 !important;
+        width: 125px;
+        margin: 0;
     }
 
     .item img {
-        width: 115px !important;
-        height: 175px !important;
-        object-fit: cover !important;
-        transform: none !important;
+        width: 115px;
+        height: 175px;
+        object-fit: cover;
+        transform: none;
+    }
+
+    .item img:hover,
+    .item.seleccionado img {
+        transform: none;
     }
 
     .descripcion-libro {
-        grid-column: 1 / -1 !important;
-        width: 88% !important;
-        max-width: 420px !important;
-        margin: 20px auto 25px !important;
+        grid-column: 1 / -1;
+        width: 88%;
+        max-width: 420px;
+        margin: 20px auto 25px;
     }
 
     .destacados-mes {
@@ -311,7 +303,7 @@ main {
     }
 
     .destacado-slide p {
-        font-size: 0.82rem;
+        font-size: .82rem;
         line-height: 1.35;
     }
 
@@ -325,7 +317,7 @@ main {
     }
 
     .destacado-cita p {
-        font-size: 0.8rem;
+        font-size: .8rem;
     }
 
     .footer-contenido {
@@ -334,10 +326,8 @@ main {
     }
 }
 
-
-/* ========================= */
 /* CELULARES Y TABLETS CHICAS */
-/* ========================= */
+
 
 @media (max-width: 768px) {
 
@@ -376,7 +366,7 @@ main {
     }
 
     .menu a {
-        font-size: 0.9rem;
+        font-size: .9rem;
         padding: 4px 6px;
         white-space: nowrap;
     }
@@ -445,7 +435,7 @@ main {
         max-width: 420px;
         margin: 20px auto 25px;
         padding: 15px;
-        font-size: 0.95rem;
+        font-size: .95rem;
     }
 
     .destacados-mes {
@@ -480,7 +470,7 @@ main {
     }
 
     .destacado-slide p {
-        font-size: 0.85rem;
+        font-size: .85rem;
         line-height: 1.4;
     }
 
@@ -493,7 +483,7 @@ main {
     }
 
     .destacado-cita p {
-        font-size: 0.8rem;
+        font-size: .8rem;
     }
 
     .destacados-mes .carousel-control-prev,
@@ -576,10 +566,8 @@ main {
     }
 }
 
-
-/* ========================= */
 /* CELULARES */
-/* ========================= */
+
 
 @media (max-width: 480px) {
 
@@ -596,7 +584,7 @@ main {
     }
 
     .menu a {
-        font-size: 0.78rem;
+        font-size: .78rem;
         padding: 3px 5px;
     }
 
@@ -634,16 +622,16 @@ main {
 
     .pendiente-card h3,
     .libro-biblioteca h4 {
-        font-size: 0.85rem;
+        font-size: .85rem;
     }
 
     .pendiente-card p,
     .libro-biblioteca p {
-        font-size: 0.75rem;
+        font-size: .75rem;
     }
 
     .descripcion-libro {
-        font-size: 0.9rem;
+        font-size: .9rem;
     }
 
     .destacados-mes {
@@ -673,7 +661,7 @@ main {
     }
 
     .destacado-slide p {
-        font-size: 0.8rem;
+        font-size: .8rem;
     }
 
     .destacado-cita h3 {
@@ -690,10 +678,8 @@ main {
     }
 }
 
-
-/* ========================= */
 /* CELULARES MUY CHICOS */
-/* ========================= */
+
 
 @media (max-width: 375px) {
 
@@ -731,16 +717,16 @@ main {
     }
 
     .destacado-slide p {
-        font-size: 0.78rem;
+        font-size: .78rem;
         line-height: 1.35;
     }
 
     .destacado-cita h3 {
-        font-size: 0.95rem;
+        font-size: .95rem;
     }
 
     .destacado-cita p {
-        font-size: 0.78rem;
+        font-size: .78rem;
     }
 
     .destacados-mes .carousel-control-prev {
@@ -752,10 +738,8 @@ main {
     }
 }
 
-
-/* ========================= */
 /* PANTALLAS GRANDES */
-/* ========================= */
+
 
 @media (min-width: 1200px) {
 
@@ -805,10 +789,7 @@ main {
     }
 }
 
-
-/* ========================= */
 /* PANTALLAS MUY GRANDES */
-/* ========================= */
 
 @media (min-width: 1600px) {
 
@@ -826,10 +807,7 @@ main {
     }
 }
 
-
-/* ========================= */
 /* REDUCIR MOVIMIENTO */
-/* ========================= */
 
 @media (prefers-reduced-motion: reduce) {
 

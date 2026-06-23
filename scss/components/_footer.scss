@@ -2,12 +2,11 @@
 
 .footer {
     position: relative;
+
     margin-top: 60px;
     padding: 15px 20px;
 
     color: variables.$color-principal;
-
-    border-top: 1px solid rgba(221, 210, 151, .3);
 
     background-color: #1b2740;
     background-image: url("../assents/fondofooter2.png");
@@ -15,25 +14,27 @@
     background-position: center;
     background-repeat: no-repeat;
 
+    border-top: 1px solid rgba(221, 210, 151, .3);
     overflow: hidden;
 
     &::before {
         content: "";
         position: absolute;
         inset: 0;
+        z-index: 1;
 
         background: rgba(12, 10, 35, .5);
-        z-index: 1;
         pointer-events: none;
     }
 
     a {
         color: variables.$color-principal;
         text-decoration: none;
+
         transition: all .3s ease;
 
         &:hover {
-            color: #f5e6b3;
+            color: variables.$color-hover;
             text-shadow: 0 0 10px rgba(221, 210, 151, .8);
         }
     }
@@ -43,22 +44,23 @@
     position: relative;
     z-index: 2;
 
-    max-width: 1200px;
-    margin: 0 auto;
-
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
     flex-wrap: wrap;
     gap: 40px;
+
+    max-width: 1200px;
+    margin: 0 auto;
 
     box-sizing: border-box;
 }
 
 .footer-logo {
     img {
-        width: 80px;
         display: block;
+
+        width: 80px;
         margin-bottom: 10px;
     }
 }
@@ -85,6 +87,7 @@
     z-index: 2;
 
     margin-top: 30px;
+
     text-align: center;
     opacity: .7;
 }
@@ -94,9 +97,9 @@
     z-index: 2;
 
     margin: 15px 0;
-    text-align: center;
-    letter-spacing: 8px;
 
     color: variables.$color-principal;
+    letter-spacing: 8px;
+    text-align: center;
     opacity: .7;
 }
